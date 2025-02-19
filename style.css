@@ -89,7 +89,6 @@ body {
 
 .feature .feature__right .feature__right__content h1 {
   width: 544px;
-  height: 74px;
   font-family: Poppins;
   font-weight: 500;
   font-size: 31px;
@@ -184,13 +183,12 @@ body {
 .construction .construction__left h1 {
   font-family: "Optima";
   width: 498px;
-  height: 162px;
   font-weight: 400;
   font-size: 63px;
   line-height: 66.78px;
-  letter-spacing: -2%;
   color: #402c22;
   margin: 0;
+  margin-bottom: 23px;
 }
 
 .construction__left__cushion {
@@ -216,7 +214,6 @@ body {
 
 .construction__left p {
   width: 403px;
-  height: 69px;
   font-family: "Inter";
   font-weight: 500;
   font-size: 16px;
@@ -243,7 +240,6 @@ body {
   font-family: "Optima nova LT Pro", sans-serif;
   font-size: 22px;
   line-height: 26.84px;
-  letter-spacing: -2%;
   color: #402c22;
 }
 
