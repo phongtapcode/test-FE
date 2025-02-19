@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@font-face {
+  font-family: "Optima nova LT Pro";
+  src: url("assets/fonts/Optima-nova-LT-Pro.woff2") format("woff2"),
+    url("assets/fonts/Optima-nova-LT-Pro.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.feature {
+  width: auto;
+  height: 852px;
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins";
+  gap: 20px;
+  margin-top: 35px;
+}
+
+.feature .feature__left {
+  width: 782px;
+  height: 100%;
+  background-color: bisque;
+  background: linear-gradient(180deg, rgba(221, 212, 197, 0) 0%, #8e887e 100%);
+  position: relative;
+  border-radius: 17px;
+}
+
+.feature__left img {
+  width: 687px;
+  height: 667px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.feature__left span {
+  font-weight: 500;
+  color: #1e1e1e;
+  font-size: 15px;
+  position: absolute;
+  top: 39px;
+  left: 27px;
+  opacity: 0.4;
+}
+
+.feature__left .feature__left__title {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  position: absolute;
+  left: 27px;
+  top: 610px;
+}
+
+.feature__left .feature__left__title h1 {
+  font-weight: 500;
+  font-size: 31px;
+  line-height: 37.2px;
+  margin-bottom: 60px;
+}
+
+.feature__left .feature__left__title h2 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 150px;
+  line-height: 24px;
+}
+
+.feature .feature__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.feature .feature__right .feature__right__content {
+  width: 782px;
+  height: 371px;
+  border-radius: 17px;
+  background-color: #f7f7f8;
+}
+
+.feature .feature__right .feature__right__content h1 {
+  width: 544px;
+  height: 74px;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 31px;
+  line-height: 37.2px;
+  letter-spacing: -3%;
+  color: #1e1e1e;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 39px;
+}
+
+.feature__right__content__list {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.feature__right__content__list div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  height: 112px;
+  padding-top: 20px;
+}
+
+.feature__right__content__list div img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 5px;
+}
+
+.feature__right__content__list div span {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 22.1px;
+  letter-spacing: -2%;
+  text-align: center;
+  color: #1e1e1e;
+}
+
+.feature .feature__right .feature__right__shopall {
+  width: 782px;
+  height: 454px;
+  background-image: url("assets/images/shopall.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature .feature__right .feature__right__shopall button {
+  width: 124px;
+  height: 46px;
+  border-radius: 56px;
+  padding-top: 16px;
+  padding-right: 24px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+  gap: 8px;
+  background-color: #827c6c;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20.24px;
+  border: none;
+}
+
+.construction {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.construction .construction__left {
+  margin-right: 95px;
+}
+
+.construction .construction__left h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #402c22;
+  margin-top: 75px;
+}
+
+.construction .construction__left h1 {
+  font-family: "Optima";
+  width: 498px;
+  height: 162px;
+  font-weight: 400;
+  font-size: 63px;
+  line-height: 66.78px;
+  letter-spacing: -2%;
+  color: #402c22;
+  margin: 0;
+}
+
+.construction__left__cushion {
+  display: flex;
+  width: 452px;
+  height: 27px;
+  justify-content: space-between;
+}
+
+.construction__left__cushion span {
+  color: #402c22;
+  font-family: "Optima nova LT Pro", sans-serif;
+  font-size: 22px;
+  font-size: 22px;
+  line-height: 26.84px;
+  letter-spacing: -2%;
+}
+
+.construction__left__cushion img {
+  width: 9.33px;
+  margin-top: -10px;
+}
+
+.construction__left p {
+  width: 403px;
+  height: 69px;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  color: #402c22;
+  margin-top: 8px;
+  margin-bottom: 25px;
+}
+
+.construction__left__menu {
+  display: flex;
+  flex-direction: column;
+  width: 452px;
+}
+
+.construction__left__menu__item {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgba(217, 213, 211, 1);
+  padding: 18px 0;
+}
+
+.construction__left__menu__item span {
+  font-family: "Optima nova LT Pro", sans-serif;
+  font-size: 22px;
+  line-height: 26.84px;
+  letter-spacing: -2%;
+  color: #402c22;
+}
+
+.construction__left__menu__item img {
+  width: 9.33px;
+}
+
+.construction__bottom {
+  width: 764px;
+  height: 851px;
+  background-image: url("assets/images/chair1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.construction__right {
+  width: 553px;
+  height: 551px;
+  background-image: url("assets/images/chair2.png");
+  background-size: cover;
+  background-position: center;
+  margin-left: 13px;
+}
