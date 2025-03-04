@@ -5,73 +5,268 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trang Chủ</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/component/card-product.css" />
   </head>
   <body>
-    <section class="feature">
-      <div class="feature__left">
-        <img src="assets/images/bycle.png" alt="icon" />
-        <span>SPACIAL FEATURE</span>
-        <div class="feature__left__title">
-          <h1>Super</h1>
-          <h2>Smart</h2>
-        </div>
-      </div>
-      <div class="feature__right">
-        <div class="feature__right__content">
-          <h1>We want to share creative inspiration & expression</h1>
-          <div class="feature__right__content__list">
-            <div style="border-right: 1px solid rgba(0, 0, 0, 0.11)">
-              <img src="assets/icons/feature1.svg" alt="icon" />
-              <span>Seatpost</span>
-              <span>Suspension</span>
-            </div>
-            <div style="border-right: 1px solid rgba(0, 0, 0, 0.11)">
-              <img src="assets/icons/feature2.svg" alt="icon" />
-              <span>Automatic</span>
-              <span>Assistance</span>
-            </div>
-            <div>
-              <img src="assets/icons/feature3.svg" alt="icon" />
-              <span>All-new</span>
-              <span>Battery</span>
+    <section class="banner">
+      <header class="header container-base">
+        <img src="assets/icons/logo.svg" class="header__logo" />
+        <div class="header__menu">
+          <div class="header__menu-left">
+            <a href="#" class="header__menu-item">New & Featured</a>
+            <a href="#" class="header__menu-item">Collection</a>
+            <a href="#" class="header__menu-item">Customize</a>
+            <a href="#" class="header__menu-item">About us</a>
+            <a href="#" class="header__menu-item">Blog</a>
+          </div>
+
+          <img
+            src="./assets/icons/menubar.svg"
+            alt="menubar"
+            class="header__menu-icon"
+          />
+
+          <div class="header__menu-right">
+            <img src="./assets/icons/search.svg" alt="search" />
+            <img src="./assets/icons/user.svg" alt="user" />
+            <div class="header__menu-right-cart">
+              <img src="./assets/icons/cart.svg" alt="cart" />
+              <span class="header__menu-right-cart--cirle">22</span>
             </div>
           </div>
         </div>
-        <div class="feature__right__shopall">
-          <button>Shop all</button>
+      </header>
+      <h1 class="banner__title container-base">Protection with style</h1>
+    </section>
+
+    <section class="seller container-main">
+      <h2 class="seller__title">Best Sellers</h2>
+      <div class="seller__list">
+        <div class="card-product">
+          <img src="./assets/images/products/anh1.png" alt="anh1" />
+          <div class="card-product__name">Hills</div>
+          <span class="card-product__price">$76</span>
+          <div class="card-product__list-color">
+            <div
+              class="card-product__list-color__item card-product__list-color__item1 card-product__list-color__item--select"
+            ></div>
+            <div
+              class="card-product__list-color__item card-product__list-color__item2"
+            ></div>
+            <div
+              class="card-product__list-color__item card-product__list-color__item3"
+            ></div>
+            <div
+              class="card-product__list-color__item card-product__list-color__item4"
+            ></div>
+          </div>
+        </div>
+        <div class="card-product">
+          <img src="./assets/images/products/anh2.png" alt="anh1" />
+          <div class="card-product__name">Hills</div>
+          <span class="card-product__price">$76</span>
+          <div class="card-product__list-color">
+            <div
+              class="card-product__list-color__item card-product__list-color__item1 card-product__list-color__item--select"
+            ></div>
+            <div
+              class="card-product__list-color__item card-product__list-color__item2"
+            ></div>
+            <div
+              class="card-product__list-color__item card-product__list-color__item3"
+            ></div>
+            <div
+              class="card-product__list-color__item card-product__list-color__item4"
+            ></div>
+          </div>
+        </div>
+        <div class="card-product">
+          <img src="./assets/images/products/anh3.png" alt="anh1" />
+          <div class="card-product__name">Hills</div>
+          <span class="card-product__price">$76</span>
+          <div class="card-product__list-color">
+            <div
+              class="card-product__list-color__item card-product__list-color__item1 card-product__list-color__item--select"
+            ></div>
+            <div
+              class="card-product__list-color__item card-product__list-color__item2"
+            ></div>
+            <div
+              class="card-product__list-color__item card-product__list-color__item3"
+            ></div>
+            <div
+              class="card-product__list-color__item card-product__list-color__item4"
+            ></div>
+          </div>
+        </div>
+        <div class="card-product">
+          <img src="./assets/images/products/anh4.png" alt="anh1" />
+          <div class="card-product__name">Hills</div>
+          <span class="card-product__price">$76</span>
+          <div class="card-product__list-color">
+            <div
+              class="card-product__list-color__item card-product__list-color__item1 card-product__list-color__item--select"
+            ></div>
+            <div
+              class="card-product__list-color__item card-product__list-color__item2"
+            ></div>
+            <div
+              class="card-product__list-color__item card-product__list-color__item3"
+            ></div>
+            <div
+              class="card-product__list-color__item card-product__list-color__item4"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="seller__banner">
+        <span class="seller__banner--button">Shop all</span>
+      </div>
+    </section>
+
+    <section class="introduce-cases">
+      <div class="container-main">
+        <h3 class="introduce-cases__title">Extreme Cases MagSafe Compatible</h3>
+        <div class="introduce-cases__list">
+          <div class="introduce-cases__list__item">
+            <span>01</span>
+            <img src="assets/images/products/cases1.png" alt="case1" />
+            <p>Essentials by CASETiFY™ The Beauty of Simplicity</p>
+          </div>
+          <div
+            class="introduce-cases__list__item introduce-cases__list__item--second"
+          >
+            <span>02</span>
+            <p>Defy Gravity With The New Bounce Case</p>
+          </div>
+          <div
+            class="introduce-cases__list__item introduce-cases__list__item--third"
+          >
+            <span>03</span>
+            <img src="assets/images/products/cases3.png" alt="case1" />
+            <p>Spice up your mirror selfies with a little Y2K</p>
+          </div>
+        </div>
+
+        <div class="introduce-cases__process-bar">
+          <div class="introduce-cases__progress-bar__fill"></div>
+          <div class="introduce-cases__progress-bar__step"></div>
+          <div class="introduce-cases__progress-bar__step"></div>
         </div>
       </div>
     </section>
 
-    <section class="construction">
-      <div class="construction__left">
-        <h2>CONSTRUCTION</h2>
-        <h1>The perfect accent chair for any room</h1>
-        <div class="construction__left__cushion">
-          <span>Cushion</span>
-          <img src="assets/icons/minus.svg" alt="icon" />
-        </div>
-        <p>
-          The Thayer's seat cushion features a core of high-resiliency foam
-          wrapped with a layer of microfiber for a structured, supportive sit.
-        </p>
-        <div class="construction__left__menu">
-          <div class="construction__left__menu__item">
-            <span>Upholstery</span>
-            <img src="assets/icons/plus.svg" alt="icon" />
-          </div>
-          <div class="construction__left__menu__item">
-            <span>Frame</span>
-            <img src="assets/icons/plus.svg" alt="icon" />
-          </div>
-          <div class="construction__left__menu__item">
-            <span>Finish</span>
-            <img src="assets/icons/plus.svg" alt="icon" />
+    <section class="featured">
+      <div class="container-main">
+        <h4 class="featured__title">
+          Spice up your mirror selfies with a little phone
+        </h4>
+        <div class="featured__card">
+          <img
+            src="./assets/images/products/anh5.png"
+            alt="anh"
+            class="featured__card__img"
+          />
+          <div class="featured__card__infor">
+            <span class="featured__card__infor--name">Limone Case</span>
+            <p class="featured__card__infor--p">
+              Yes, we ship all over the world. Shipping costs will apply
+            </p>
+            <div class="featured__card__infor-price">
+              <div>
+                <span class="featured__card__infor-price__new">$20.00</span>
+                <span class="featured__card__infor-price__old">$58.00</span>
+              </div>
+              <div class="featured__card__infor-price--button">+</div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="construction__bottom"></div>
-      <div class="construction__right"></div>
+    </section>
+
+    <section class="featured-collection container-main">
+      <div class="featured-collection__left">
+        <p>Extreme Case Compatible</p>
+      </div>
+      <div class="featured-collection__list">
+        <div class="card-product">
+          <img src="./assets/images/products/anh1.png" alt="anh1" />
+          <div class="card-product__name">Hills</div>
+          <span class="card-product__price">$76</span>
+          <div class="card-product__list-color">
+            <div
+              class="card-product__list-color__item card-product__list-color__item1 card-product__list-color__item--select"
+            ></div>
+            <div
+              class="card-product__list-color__item card-product__list-color__item2"
+            ></div>
+            <div
+              class="card-product__list-color__item card-product__list-color__item3"
+            ></div>
+            <div
+              class="card-product__list-color__item card-product__list-color__item4"
+            ></div>
+          </div>
+        </div>
+        <div class="card-product">
+          <img src="./assets/images/products/anh2.png" alt="anh1" />
+          <div class="card-product__name">Hills</div>
+          <span class="card-product__price">$76</span>
+          <div class="card-product__list-color">
+            <div
+              class="card-product__list-color__item card-product__list-color__item1 card-product__list-color__item--select"
+            ></div>
+            <div
+              class="card-product__list-color__item card-product__list-color__item2"
+            ></div>
+            <div
+              class="card-product__list-color__item card-product__list-color__item3"
+            ></div>
+            <div
+              class="card-product__list-color__item card-product__list-color__item4"
+            ></div>
+          </div>
+        </div>
+        <div class="card-product">
+          <img src="./assets/images/products/anh3.png" alt="anh1" />
+          <div class="card-product__name">Hills</div>
+          <span class="card-product__price">$76</span>
+          <div class="card-product__list-color">
+            <div
+              class="card-product__list-color__item card-product__list-color__item1 card-product__list-color__item--select"
+            ></div>
+            <div
+              class="card-product__list-color__item card-product__list-color__item2"
+            ></div>
+            <div
+              class="card-product__list-color__item card-product__list-color__item3"
+            ></div>
+            <div
+              class="card-product__list-color__item card-product__list-color__item4"
+            ></div>
+          </div>
+        </div>
+        <div class="card-product">
+          <img src="./assets/images/products/anh4.png" alt="anh1" />
+          <div class="card-product__name">Hills</div>
+          <span class="card-product__price">$76</span>
+          <div class="card-product__list-color">
+            <div
+              class="card-product__list-color__item card-product__list-color__item1 card-product__list-color__item--select"
+            ></div>
+            <div
+              class="card-product__list-color__item card-product__list-color__item2"
+            ></div>
+            <div
+              class="card-product__list-color__item card-product__list-color__item3"
+            ></div>
+            <div
+              class="card-product__list-color__item card-product__list-color__item4"
+            ></div>
+          </div>
+        </div>
+      </div>
     </section>
   </body>
 </html>
