@@ -33,7 +33,7 @@
   margin-top: 20px;
 }
 
-.card-product__list-color__item {
+.card-product__list-item {
   width: 14px;
   height: 14px;
   border-radius: 50%;
@@ -41,23 +41,23 @@
   cursor: pointer;
 }
 
-.card-product__list-color__item1 {
+.card-product__list-item1 {
   background-color: #c9bfae;
 }
 
-.card-product__list-color__item2 {
+.card-product__list-item2 {
   background-color: #a393b5;
 }
 
-.card-product__list-color__item3 {
+.card-product__list-item3 {
   background-color: #ec978c;
 }
 
-.card-product__list-color__item4 {
+.card-product__list-item4 {
   background-color: #ec978c;
 }
 
-.card-product__list-color__item--select {
+.card-product__list-item--select {
   position: relative;
   border: 2px solid transparent;
   outline: 2px solid #c2c2c2;
