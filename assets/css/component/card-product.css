@@ -8,8 +8,9 @@
 }
 
 .card-product img {
-  width: 85%;
+  width: 100%;
   height: auto;
+  margin-top: 23px;
 }
 
 .card-product__name {
