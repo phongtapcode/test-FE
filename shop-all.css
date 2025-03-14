@@ -1,0 +1,175 @@
+.banner {
+  aspect-ratio: 3.75;
+  background-image: url("assets/images/banner-shopall.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.banner h1 {
+  position: absolute;
+  margin: 0;
+  font-weight: 700;
+  color: #fff;
+  font-size: 96px;
+  bottom: 64px;
+  left: 163px;
+  letter-spacing: -5px;
+}
+
+.banner .banner__count {
+  position: absolute;
+  font-size: 14px;
+  left: 522px;
+  bottom: 157px;
+  color: white;
+  opacity: 0.4;
+}
+
+.category {
+    margin-top: 57px;
+}
+
+.category__title {
+    font-size: 29px;
+    margin: 0;
+}
+
+.category__des {
+    color: #1E1E1E;
+    opacity: 0.8;
+    font-size: 15px;
+    width: 337px;
+}
+
+.category__list {
+  position: relative;
+    padding-right: 108px;
+    margin-top: 40px;
+}
+
+.category__item--select {
+    border-radius: 8px;
+    border: 1px solid #848484;
+}
+
+.category__list .category__item{
+    background-color: #F7F7F8;
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.category__item img{
+    width: 78px;
+}
+
+.category__name {
+    color: #1E232B;
+    font-size: 16px;
+}
+
+.category__list a {
+    display: block;
+    text-decoration: none;
+}
+
+.navigate-button {
+    position: absolute;
+    background: linear-gradient(270deg, #FFF 78.28%, rgba(255, 255, 255, 0.00) 100%);
+    display: flex;
+    align-items: center;
+    right: 0;
+    gap: 16px;
+    height: 110px;
+    padding-left: 131px;
+  }
+  
+  .navigate-button div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: #F6F6F6;
+    border-radius: 50%;
+  }
+
+  .fs {
+    display: flex;
+    justify-content: space-between;
+    padding: 48px 0;
+  }
+
+  .fs .fs-filter {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+  }
+
+  .fs .fs-sort {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    opacity: 0.8;
+  }
+
+  .fs-sort span {
+    opacity: 0.5;
+    margin-right: 8px;
+  }
+
+  .service {
+    margin-top: 58px;
+    margin-bottom: 41px;
+  }
+
+  .service__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F7F7F8;
+    padding: 46px 90px;
+    padding-top: 43px;
+    text-align: center;
+  }
+
+  .service__icon {
+    width: 49px;
+  }
+
+  .service__title {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 500;
+    padding-top: 14px;
+    margin-bottom: 8px;
+  }
+
+  .service__description {
+    margin: 0;
+  }
+
+@media screen and (max-width: 1000px) {
+  .banner {
+    aspect-ratio: 0.85;
+  }
+
+  .banner h1 {
+    font-size: 66px;
+    bottom: 40px;
+    left: 55px;
+    letter-spacing: 0;
+  }
+
+  .banner .banner__count {
+    position: absolute;
+    font-size: 12px;
+    left: 333px;
+    bottom: 93px;
+    color: white;
+    opacity: 0.7;
+  }
+}

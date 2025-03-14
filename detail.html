@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang Chủ</title>
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Your Custom CSS -->
+    <link rel="stylesheet" href="detail.css" />
+    <link rel="stylesheet" href="assets/css/component/card-product.css" />
+    <link rel="stylesheet" href="assets/css/component/header.css" />
+    <link rel="stylesheet" href="assets/css/component/footer.css" />
+    <link rel="stylesheet" href="assets/css/component/container.css" />
+    <link rel="stylesheet" href="assets/css/component/pagination.css" />
+    <link rel="stylesheet" href="assets/css/component/dropdown.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/layout/grid.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img src="assets/icons/logoblack.svg" class="header__logo" />
+      <div class="header__menu" style="background-color: #f6f6f6">
+        <div class="header__menu-left">
+          <a href="#" class="header__menu-item">New & Featured</a>
+          <a href="#" class="header__menu-item">Collection</a>
+          <a href="#" class="header__menu-item">Customize</a>
+          <a href="#" class="header__menu-item">About us</a>
+          <a href="#" class="header__menu-item">Blog</a>
+        </div>
+
+        <img
+          src="./assets/icons/menubar.svg"
+          alt="menubar"
+          class="header__menu-icon"
+        />
+
+        <div class="header__menu-right">
+          <a href="#">
+            <img src="./assets/icons/search.svg" alt="search" />
+          </a>
+          <a href="#">
+            <img src="./assets/icons/user.svg" alt="user" />
+          </a>
+          <a href="#" class="header__menu-cart">
+            <img src="./assets/icons/cart.svg" alt="cart" />
+            <span>22</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="line"></div>
+
+    <section class="container-main" style="padding-top: 48px">
+      <div class="product-detail">
+        <div class="product-detail__slide">
+          <div class="swiper main-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="assets/images/products/anh1.png" alt="Image 1" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/products/anh2.png" alt="Image 2" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/products/anh3.png" alt="Image 3" />
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper thumbnail-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="assets/images/products/anh1.png" alt="Thumbnail 1" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/products/anh2.png" alt="Thumbnail 2" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/products/anh3.png" alt="Thumbnail 3" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-detail__infor">
+          <h2 class="product-detail__sub">SOUNDBAR</h2>
+          <h1 class="product-detail__title">
+            Wavy Check Forest on Sky Matte Case
+          </h1>
+          <p class="product-detail__des">
+            The Tough Clear case has a slim profile with 12-foot drop
+            protection. The one-piece platform design is constructed with
+            cushioned...
+          </p>
+          <div class="product-detail__price">$78 <span>$90</span></div>
+          <h3 class="product-detail__name">SELECT DEVIDE</h3>
+          <div class="prduct-detail__select-devide">
+            <div class="dropdown">
+              <button class="dropdown__button">
+                <span class="dropdown__text">Apple</span>
+                <span class="dropdown__icon"
+                  ><img
+                    src="assets/icons/arrowdown.svg"
+                    alt="icon"
+                    style="rotate: -90deg"
+                /></span>
+              </button>
+              <ul class="dropdown__menu">
+                <li class="dropdown__item">Apple</li>
+                <li class="dropdown__item">Samsung</li>
+                <li class="dropdown__item">Google</li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <button class="dropdown__button">
+                <span class="dropdown__text">Apple</span>
+                <span class="dropdown__icon"
+                  ><img
+                    src="assets/icons/arrowdown.svg"
+                    alt="icon"
+                    style="rotate: -90deg"
+                /></span>
+              </button>
+              <ul class="dropdown__menu">
+                <li class="dropdown__item">Apple</li>
+                <li class="dropdown__item">Samsung</li>
+                <li class="dropdown__item">Google</li>
+              </ul>
+            </div>
+          </div>
+          <h4 class="product-detail__name">SELECT COLOR</h4>
+          <div
+            class="list-color"
+            style="justify-content: start; margin-top: 9px; gap: 6px"
+          >
+            <div
+              class="list-color__item list-color__item--select"
+              style="--color-item: #0f61ff; --item-width: 19px"
+            ></div>
+            <div
+              class="list-color__item"
+              style="--color-item: #c1c1c1; --item-width: 19px"
+            ></div>
+            <div
+              class="list-color__item"
+              style="--color-item: #d9b99b; --item-width: 19px"
+            ></div>
+          </div>
+
+          <div class="input-number">
+            <button class="input-number__btn input-number__btn--minus">
+              −
+            </button>
+            <input type="text" class="input-number__value" value="01" min="0" />
+            <button class="input-number__btn input-number__btn--plus">+</button>
+          </div>
+
+          <div class="product-detail__button">
+            <button class="product-detail__buy">BUY NOW</button>
+            <button class="product-detail__add">ADD TO CART</button>
+          </div>
+
+          <div class="accordion">
+            <div class="accordion-item">
+              <button class="accordion-header active">
+                Main features <span class="icon">−</span>
+              </button>
+              <div class="accordion-content open">
+                <p>
+                  The Bundle includes 1 box, 1 phone case, and 4 screen wipers
+                  or 2 screen protectors for iPhone 15 sizes.
+                </p>
+                <ul>
+                  <li>
+                    Ultra-slim hybrid raised AirLite™ corners for all-round
+                    protection
+                  </li>
+                  <li>Raised lens bezel to shield back camera</li>
+                  <li>
+                    Flexible anti-yellowing Bayer TPU bumper for long-lasting
+                    clarity
+                  </li>
+                  <li>Tough 3H scratch-resistant polycarbonate back</li>
+                  <li>
+                    Reinforced raised corners to shield against direct face-down
+                    impact
+                  </li>
+                  <li>Drop-tested to withstand up to 8 feet/2.5 meters</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header">
+                Materials <span class="icon">+</span>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  High-quality polycarbonate and TPU blend for superior
+                  protection.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header">
+                Shipping & returns <span class="icon">+</span>
+              </button>
+              <div class="accordion-content">
+                <p>Free shipping for orders over $50. 30-day return policy.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header">
+                Care guide <span class="icon">+</span>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Use a damp cloth to clean your case. Avoid direct sunlight for
+                  prolonged periods.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="introduce-cases"
+      style="margin-top: 85px; padding: 80px 0 !important"
+    >
+      <div class="container-main">
+        <h3 class="introduce-cases__title">Extreme Cases MagSafe Compatible</h3>
+        <div class="introduce-cases__list grid" style="--row: 3; --gap: 60px">
+          <div class="introduce-cases__item">
+            <span>01</span>
+            <img src="assets/images/products/cases1.png" alt="case1" />
+            <p>Essentials by CASETiFY™ The Beauty of Simplicity</p>
+          </div>
+          <div class="introduce-cases__item introduce-cases__item--second">
+            <span>02</span>
+            <p>Defy Gravity With The New Bounce Case</p>
+          </div>
+          <div class="introduce-cases__item introduce-cases__item--third">
+            <span>03</span>
+            <img src="assets/images/products/cases3.png" alt="case1" />
+            <p>Spice up your mirror selfies with a little Y2K</p>
+          </div>
+        </div>
+
+        <div class="introduce-cases__process-bar">
+          <div class="introduce-cases__progress-bar__fill"></div>
+          <div class="introduce-cases__progress-bar__step"></div>
+          <div class="introduce-cases__progress-bar__step"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="specification">
+      <div class="container-main">
+        <h2 class="specification__title">
+          Introducing the Plasma XTE Case, blend of cutting-edge design and
+          unwavering protection
+        </h2>
+
+        <div class="specification__content">
+          <div class="specification__left">
+            <div>
+              <p>IP Protech Up To</p>
+              <h3>IP68</h3>
+            </div>
+            <div>
+              <p>Drop Protechtion</p>
+              <h3>Air Tech</h3>
+            </div>
+          </div>
+          <div class="specification__center">
+            <div class="specification__item">
+              <span class="specification__item-attr">Height</span>
+              <div class="specification__item-value">9.5 in (241 mm)</div>
+            </div>
+            <div class="specification__item" style="border-top: 1px solid #E5E5E5;">
+              <span class="specification__item-attr">Width</span>
+              <span class="specification__item-value">6.5 in (160 mm)</span>
+            </div>
+            <div class="specification__item" style="border-top: 1px solid #E5E5E5;">
+              <span class="specification__item-attr">Depth</span>
+              <span class="specification__item-value">0.5 in (241 mm)</span>
+            </div>
+            <div class="specification__item" style="border-top: 1px solid #E5E5E5;">
+              <span class="specification__item-attr">Weight</span>
+              <span class="specification__item-value" style="margin-right: 10px;">0.008 kg</span>
+            </div>
+          </div>
+
+          <div class="specification__right"></div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const accordionHeaders = document.querySelectorAll(".accordion-header");
+
+        accordionHeaders.forEach((button, index) => {
+          const content = button.nextElementSibling;
+          const icon = button.querySelector(".icon");
+
+          // ✅ Nếu là mục đầu tiên, giữ mở mặc định
+          if (index === 0) {
+            content.classList.add("open"); // Giữ nội dung hiển thị
+            button.classList.add("active"); // Đánh dấu nút đang mở
+            icon.textContent = "−";
+          }
+
+          button.addEventListener("click", function () {
+            if (button.classList.contains("active")) {
+              content.classList.remove("open");
+              icon.textContent = "+";
+              button.classList.remove("active");
+            } else {
+              // Đóng tất cả các mục khác
+              accordionHeaders.forEach((btn) => {
+                btn.classList.remove("active");
+                btn.nextElementSibling.classList.remove("open");
+                btn.querySelector(".icon").textContent = "+";
+              });
+
+              content.classList.add("open");
+              icon.textContent = "−";
+              button.classList.add("active");
+            }
+          });
+        });
+      });
+    </script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swipers -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var thumbSwiper = new Swiper(".thumbnail-slider", {
+          spaceBetween: 10,
+          slidesPerView: 3,
+          freeMode: true,
+          watchSlidesProgress: true,
+        });
+
+        var mainSwiper = new Swiper(".main-slider", {
+          spaceBetween: 10,
+          thumbs: {
+            swiper: thumbSwiper,
+          },
+        });
+      });
+    </script>
+  </body>
+</html>

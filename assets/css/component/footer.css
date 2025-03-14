@@ -1,0 +1,157 @@
+footer {
+  background-color: #0f61ff;
+  color: white;
+  padding: 66px 0;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__content-left {
+  margin-left: 32px;
+}
+
+.footer__content-left img {
+  width: 139px;
+}
+
+.footer__content-left p {
+  width: 400px;
+  font-weight: 400;
+  margin: 0;
+  margin-top: 9px;
+  line-height: 22px;
+  opacity: 0.7;
+}
+
+.footer__content-socials {
+  display: flex;
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.footer__content-socials img {
+  width: 23px;
+}
+
+.footer__contenet-right {
+  display: flex;
+  gap: 188px;
+  margin-right: 306px;
+}
+
+.footer__content-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__content-menu h2 {
+  font-size: 14px;
+  color: #fff;
+  opacity: 0.6;
+  margin: 0;
+  font-weight: 400;
+}
+
+.footer__content-menu a {
+  text-decoration: none;
+  padding-top: 12px;
+  color: #fff;
+}
+
+.footer__input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.1);
+  margin-top: 74px;
+  height: 137px;
+  border-radius: 24px;
+  padding: 0 35px;
+}
+
+.footer__input input {
+  width: 100%;
+  font-size: 50px;
+  outline: none;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+}
+
+.footer__input input::placeholder {
+  color: white;
+  opacity: 0.5;
+}
+
+.footer__input div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.footer__pay {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 27px;
+}
+
+.footer__pay-left {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-left: 32px;
+}
+
+.footer__pay-left div {
+  width: 4px;
+  height: 4px;
+  background-color: white;
+  opacity: 0.4;
+  border-radius: 50%;
+}
+
+.footer__pay-right {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 4px;
+  margin-right: 6px;
+}
+
+.footer__pay-right .footer__pay-apple {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 24px;
+  background-color: white;
+  border-radius: 3px;
+}
+
+.footer__pay-right .footer__pay-country {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-left: 8px;
+}
+
+.footer__pay-country img {
+  margin-left: 6px;
+}
+
+@media screen and (max-width: 1000px) {
+  .footer__content {
+    flex-direction: column;
+  }
+
+  .footer__content-left p {
+    width: 100%;
+  }
+}

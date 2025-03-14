@@ -1,0 +1,379 @@
+.line {
+  height: 114px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.product-detail {
+  display: flex;
+  gap: 20px;
+}
+
+.product-detail__slide {
+  width: 58%;
+}
+
+/* Main Slider */
+.main-slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Thumbnail Slider */
+.thumbnail-slider {
+  margin-top: 10px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+}
+
+.thumbnail-slider .swiper-slide {
+  width: 100px;
+  height: 100%;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.thumbnail-slider .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.thumbnail-slider .swiper-slide-thumb-active {
+  opacity: 1;
+  border: 2px solid #007bff;
+}
+
+.product-detail__infor {
+  width: 42%;
+  padding: 53px;
+  padding-top: 87px;
+  padding-right: 0;
+}
+
+.product-detail__sub {
+  margin: 0;
+  color: #1e1e1e;
+  opacity: 0.5;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.product-detail__title {
+  font-size: 47px;
+  margin: 0;
+  margin-top: 16px;
+  line-height: 58px;
+  padding-right: 40px;
+  letter-spacing: -1.1px;
+}
+
+.product-detail__des {
+  font-size: 17px;
+  color: #1e1e1e;
+  opacity: 0.7;
+  width: 500px;
+}
+
+.product-detail__price {
+  font-size: 19px;
+  margin-bottom: 33px;
+}
+
+.product-detail__price span {
+  color: #1e1e1e;
+  opacity: 0.5;
+  font-size: 16px;
+}
+
+.product-detail__name {
+  color: #1e1e1e;
+  opacity: 0.5;
+  font-size: 13px;
+  margin: 0;
+  letter-spacing: -0.3px;
+  font-weight: 500;
+}
+
+.prduct-detail__select-devide {
+  display: flex;
+  gap: 7px;
+  width: 358px;
+  margin-top: 10px;
+  margin-bottom: 19px;
+}
+
+/* Container chính */
+.input-number {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 413px;
+  height: 50px;
+  border: 1px solid #0f5fff6b;
+  border-radius: 25px;
+  padding: 2px 15px;
+  margin-top: 35px;
+}
+
+/* Nút tăng/giảm */
+.input-number__btn {
+  background: none;
+  border: none;
+  font-size: 32px;
+  color: #8ab4f8;
+  cursor: pointer;
+}
+
+.input-number__btn:hover {
+  color: #0f61ff;
+}
+
+/* Ô nhập số */
+.input-number__value {
+  width: 50px;
+  text-align: center;
+  font-size: 19px;
+  color: #007bff;
+  border: none;
+  outline: none;
+  background: none;
+  font-weight: 500;
+}
+
+.product-detail__button {
+  display: flex;
+  gap: 7px;
+  margin-top: 7px;
+}
+
+/* Nút "Add to Cart" */
+.product-detail__add {
+  background-color: transparent;
+  border: 1px solid #0f5fff6b;
+  color: #0f61ff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 20px 17px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.product-detail__add:hover {
+  background-color: #8ab4f8;
+  color: white;
+}
+
+/* Nút "Buy Now" */
+.product-detail__buy {
+  background-color: #0f61ff;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 20px 119px;
+}
+
+.product-detail__buy:hover {
+  background-color: #6297f3;
+}
+
+.accordion {
+    width: 100%;
+    max-width: 600px;
+    border-top: 1px solid #ddd;
+    margin-top: 61px;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ddd;
+    padding: 26px 0;
+}
+
+.accordion-header {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 0px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: #1E1E1E;
+    padding-right: 14px;
+
+}
+
+.accordion-content {
+    padding: 0;
+    font-size: 14px;
+    color: #555;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+}
+
+/* Mở mục đầu tiên mặc định */
+.accordion-content.open {
+    max-height: 500px;
+    padding-top: 12px;
+    font-size: 15px;
+    line-height: 20px;
+    color: #1E1E1E;
+    opacity: 0.7;
+}
+
+.accordion-content ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.accordion-content p {
+    margin: 0;
+    padding: 5px 0;
+}
+
+.icon {
+    font-size: 18px;
+}
+
+.specification {
+    aspect-ratio: 1.77;
+    background-image: url("assets/images/banner-detail.jpg");
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 79px 0;
+}
+
+.specification .container-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.specification__title {
+    margin: 0;
+    width: 515px;
+    font-size: 29px;
+    color: white;
+    font-weight: 600;
+}
+
+.specification__content {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 15px;
+  border-radius: 22px;
+}
+
+.specification__left {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  padding-left: 39px;
+  justify-content: space-between;
+  padding-top: 46px;
+  padding-bottom: 16px;
+}
+
+.specification__left p {
+  color: #1E1E1E;
+  opacity: 0.5;
+  margin: 0;
+}
+
+.specification__left h3 {
+  font-size: 75px;
+  margin: 0;
+}
+
+.specification__center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35%;
+  padding-right: 19px;
+}
+
+.specification__item {
+  display: flex;
+  justify-content: space-between;
+  padding: 28px 0;
+  padding-right: 65px;
+  font-size: 18px;
+}
+
+.specification__item-attr {
+  color: #1E1E1E;
+  opacity: 0.6;
+}
+
+.specification__item-value {
+
+}
+
+.specification__right {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  background-image: url("assets/images/banner-detail1.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+}
+
+
+@media (max-width: 768px) {
+  .product-detail {
+    flex-direction: column;
+    align-items: center;
+  }
+  .product-detail__slide,
+  .product-detail__infor {
+    max-width: 100%;
+  }
+  .main-slider {
+    height: 350px;
+  }
+  .thumbnail-slider {
+    height: 80px;
+  }
+  .thumbnail-slider .swiper-slide {
+    width: 80px;
+    height: 80px;
+  }
+}

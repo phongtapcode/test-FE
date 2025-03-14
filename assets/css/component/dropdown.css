@@ -1,0 +1,50 @@
+/* Định dạng chung cho dropdown */
+.dropdown {
+    position: relative;
+    width: 100%;
+}
+
+/* Nút dropdown */
+.dropdown__button {
+    width: 100%;
+    padding: 11px 14px;
+    font-size: 16px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Danh sách dropdown */
+.dropdown__menu {
+    position: absolute;
+    width: 100%;
+    background: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #E3E5E8;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 10;
+}
+
+/* Mục trong dropdown */
+.dropdown__item {
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.dropdown__item:hover {
+    background: #f0f0f0;
+}
+
+/* Hiển thị menu khi active */
+.dropdown.active .dropdown__menu {
+    display: block;
+}
