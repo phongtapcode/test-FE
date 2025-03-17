@@ -1,8 +1,5 @@
 .banner {
   aspect-ratio: 3.75;
-  background-image: url("assets/images/banner-shopall.jpg");
-  background-size: cover;
-  background-position: center;
   position: relative;
 }
 
@@ -43,13 +40,12 @@
 }
 
 .category__list {
-  position: relative;
+    position: relative;
     padding-right: 108px;
     margin-top: 40px;
 }
 
 .category__item--select {
-    border-radius: 8px;
     border: 1px solid #848484;
 }
 
@@ -58,6 +54,7 @@
     display: flex;
     align-items: center;
     padding: 15px 0;
+    border-radius: 8px;
 }
 
 .category__item img{
@@ -71,7 +68,6 @@
 
 .category__list a {
     display: block;
-    text-decoration: none;
 }
 
 .navigate-button {
@@ -101,13 +97,13 @@
     padding: 48px 0;
   }
 
-  .fs .fs-filter {
+  .fs .fs__filter {
     display: flex;
     align-items: center;
     font-size: 15px;
   }
 
-  .fs .fs-sort {
+  .fs .fs__sort {
     display: flex;
     align-items: center;
     font-size: 16px;
@@ -116,7 +112,7 @@
     opacity: 0.8;
   }
 
-  .fs-sort span {
+  .fs__sort span {
     opacity: 0.5;
     margin-right: 8px;
   }

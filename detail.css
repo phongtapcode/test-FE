@@ -1,7 +1,3 @@
-body {
-  box-sizing: border-box;
-}
-
 .line {
   height: 114px;
   border-bottom: 1px solid #e5e5e5;
@@ -216,12 +212,12 @@ body {
     margin-top: 61px;
 }
 
-.accordion-item {
+.accordion__item {
     border-bottom: 1px solid #ddd;
     padding: 26px 0;
 }
 
-.accordion-header {
+.accordion__header {
     width: 100%;
     background: none;
     border: none;
@@ -235,10 +231,9 @@ body {
     cursor: pointer;
     color: #1E1E1E;
     padding-right: 14px;
-
 }
 
-.accordion-content {
+.accordion__content {
     padding: 0;
     font-size: 14px;
     color: #555;
@@ -248,7 +243,7 @@ body {
 }
 
 /* Mở mục đầu tiên mặc định */
-.accordion-content.open {
+.accordion__content.accordion__content--open {
     max-height: 500px;
     padding-top: 12px;
     font-size: 15px;
@@ -257,12 +252,12 @@ body {
     opacity: 0.7;
 }
 
-.accordion-content ul {
+.accordion__content ul {
     padding-left: 20px;
     margin: 0;
 }
 
-.accordion-content p {
+.accordion__content p {
     margin: 0;
     padding: 5px 0;
 }
@@ -273,9 +268,6 @@ body {
 
 .specification {
     aspect-ratio: 1.77;
-    background-image: url("assets/images/banner-detail.jpg");
-    background-position: center;
-    background-size: cover;
     box-sizing: border-box;
     padding: 79px 0;
 }
@@ -346,10 +338,6 @@ body {
   opacity: 0.6;
 }
 
-.specification__item-value {
-
-}
-
 .specification__right {
   display: flex;
   flex-direction: column;
@@ -361,9 +349,9 @@ body {
 }
 
 .customization {
-  background-color: #F6F6F6;
   text-align: center;
   padding-top: 90px;
+  padding-bottom: 79px;
 }
 
 .customization__name {
@@ -392,6 +380,7 @@ body {
   padding: 20px;
   margin-top: 57px;
   box-sizing: border-box;
+  border-radius: 19px;
 }
 
 .customization__tabs {
@@ -428,27 +417,165 @@ body {
 
 .customization__list {
   display: flex;
-  gap: 10px;
+  gap: 11px;
   width: fit-content;
   margin: 0 auto;
   margin-top: 19px;
 }
 
 .customization__item {
-  max-width: 60px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .customization__item span {
   color: #0F61FF;
-  font-size: 10px;
+  font-size: 13px;
+  margin-top: 9px;
 }
 
 .customization__img {
   background-image: url("assets/images/products/customization1.jpg");
-  width: 40px;
-  height: 40px;
+  width: 38px;
+  height: 38px;
   background-position: center;
   border-radius: 50%;
+}
+
+.customization__img--active {
+  /* border: 3px sol  id transparent; */
+  outline: 1px solid #0F61FF;
+  outline-offset: 2px;
+}
+
+.faq {
+  width: 876px;
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 136px;
+}
+
+.faq__title {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 39px;
+  font-weight: 500;
+}
+
+.accordion2 {
+  width: 100%;
+  margin: 0 auto;
+  border-top: 1px solid #ddd;
+  margin-top: 30px;
+}
+
+.accordion2__item {
+  background-color: #F6F6F6;
+  padding: 26px 31px;
+  margin-bottom: 7px;
+}
+
+.accordion2__header {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0px;
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  color: #1E1E1E;
+  padding-right: 14px;
+}
+
+.accordion2__content {
+  padding: 0;
+  font-size: 14px;
+  color: #555;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+}
+
+.accordion2__content.accordion2__content--open {
+  max-height: 500px;  
+  width: 470px;
+  padding-top: 8px;
+  font-size: 15px;
+  line-height: 20px;
+  color: #1E1E1E;
+  opacity: 0.6;
+}
+
+.accordion2__content ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.accordion2__content p {
+  margin: 0;
+  padding: 5px 0;
+}
+
+.download {
+  display: flex;
+  margin-left: 29px;
+  margin-top: 21px;
+}
+
+.download__item {
+  margin-right: 34px;
+}
+
+.download__item .download__name {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.download__name img {
+  margin-left: 3px;
+}
+
+.download__item span {
+  font-size: 15px;
+  font-weight: 500;
+  color: #1E1E1E;
+  opacity: 0.5;
+}
+
+.feature-collection {
+  margin-bottom: 109px !important;
+}
+
+.feature-collection__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 26px;
+}
+
+.feature-collection__header h2{
+  margin: 0;
+  font-size: 38px;
+  font-weight: 500;
+}
+
+.feature-collection__header a{
+  font-size: 16px;
+  color: #0f61ff;
+  font-weight: 500;
+  padding: 12px 27px;
+  border-radius: 45px;
+  background: white;
+  border: 1px solid #0f61ff;
+  
+  margin-right: 16px;
 }
 
 @media (max-width: 768px) {
