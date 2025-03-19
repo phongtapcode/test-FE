@@ -70,6 +70,10 @@
   margin-bottom: 60px;
 }
 
+.introduce-cases__slide {
+  display: none;
+}
+
 .introduce-cases__list .introduce-cases__item {
   box-sizing: border-box;
   position: relative;
@@ -106,6 +110,7 @@
   background-position: center;
   background-size: cover;
   position: relative;
+  height: 100%;
 }
 
 .introduce-cases__item--second p {
@@ -423,41 +428,25 @@
 }
 
 @media (max-width: 576px) {
-  .list-color {
-    display: none !important;
-  }
-
-  .introduce-cases__list {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 50px;
-    height: auto;
-  }
-
   .introduce-cases__title {
     font-size: 30px;
     width: auto;
   }
 
-  .introduce-cases__item {
-    position: static;
-    background-color: #fff;
-    padding: 15px 0;
-  }
-
   .introduce-cases__item p {
     width: 90%;
     font-size: 23px;
-    position: static;
     padding: 0 15px;
     margin-top: 20px;
   }
 
-  .introduce-cases__item--second,
-  .introduce-cases__item--third {
-    display: none;
-  }
   .process-bar {
     visibility: visible;
+  }
+
+  .banner__title {
+    margin-left: 15px;
+    bottom: 35px;
   }
 }
 
@@ -467,4 +456,35 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .introduce-cases__list {
+    display: none;
+  }
+
+  .introduce-cases__slide {
+    display: block;
+  }
+}
+
+xo-carousel-pagination {
+  gap: 4px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.carousel-bullet {
+  display: block;
+  width: 22px;
+  height: 7px;
+  background-color: #e5e5e5;
+  border-radius: 20px;
+}
+
+xo-carousel-bullet[xo-active] .carousel-bullet {
+  width: 60px;
+  height: 7px;
+  background-color: #0f61ff;
+  border-radius: 20px;
 }

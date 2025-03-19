@@ -1,58 +1,66 @@
 <!DOCTYPE html>
 <html lang="vi">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trang Chủ</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="assets/css/component/card-product.css" />
-    <link rel="stylesheet" href="assets/css/component/header.css" />
-    <link rel="stylesheet" href="assets/css/component/footer.css" />
-    <link rel="stylesheet" href="assets/css/component/header.css" />
-    <link rel="stylesheet" href="assets/css/component/container.css" />
-    <link rel="stylesheet" href="assets/css/layout/grid.css" />
-    <link rel="stylesheet" href="xo-webcomponents.css" />
-    <style>
-      .bg-parallax {
-        position: absolute;
-        inset: 0;
-        z-index: -1;
-        overflow: hidden;
-      }
-      .bg-parallax__item {
-        position: absolute;
-        inset: 0;
-      }
-      .bg-parallax__url {
-        position: relative;
-        width: 100%;
-        height: 100%;
-      }
-      @supports (-webkit-touch-callout: none) {
-        .bg-parallax__item {
-          top: 50%;
-          left: 50%;
-          width: 100vw;
-          height: 100vh;
-          transform: translate(-50%, -50%);
-        }
-      }
 
-      .bg-parallax__url xo-video-cover {
-        position: absolute;
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trang Chủ</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="assets/css/component/card-product.css" />
+  <link rel="stylesheet" href="assets/css/component/header.css" />
+  <link rel="stylesheet" href="assets/css/component/footer.css" />
+  <link rel="stylesheet" href="assets/css/component/header.css" />
+  <link rel="stylesheet" href="assets/css/component/container.css" />
+  <link rel="stylesheet" href="assets/css/layout/grid.css" />
+  <link rel="stylesheet" href="xo-webcomponents.css" />
+  <style>
+    .bg-parallax {
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      overflow: hidden;
+    }
+
+    .bg-parallax__item {
+      position: absolute;
+      inset: 0;
+    }
+
+    .bg-parallax__url {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    @supports (-webkit-touch-callout: none) {
+      .bg-parallax__item {
         top: 50%;
-        left: 0;
-        transform: translateY(-50%);
-        width: 100%;
+        left: 50%;
+        width: 100vw;
         height: 100vh;
+        transform: translate(-50%, -50%);
       }
-      .pr-title {
-        color: #fff;
-        font-size: 60px;
-      }
-    </style>
-  </head>
-  <body>
+    }
+
+    .bg-parallax__url xo-video-cover {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 100%;
+      height: 100vh;
+    }
+
+    .pr-title {
+      color: #fff;
+      font-size: 60px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- <xo-sticky class="sticky-header"> -->
     <header class="header">
       <img src="assets/icons/logo.svg" class="header__logo" />
       <div class="header__menu">
@@ -64,11 +72,7 @@
           <a href="#" class="header__menu-item">Blog</a>
         </div>
 
-        <img
-          src="assets/icons/menubar.svg"
-          alt="menubar"
-          class="header__menu-icon"
-        />
+        <img src="assets/icons/menubar.svg" alt="menubar" class="header__menu-icon" />
 
         <div class="header__menu-right">
           <a href="#">
@@ -84,16 +88,197 @@
         </div>
       </div>
     </header>
+  <!-- </xo-sticky> -->
 
-    <section class="banner">
-      <div class="banner__title">Protection with style</div>
-    </section>
+  <section class="banner">
+    <div class="banner__title">Protection with style</div>
+  </section>
 
-    <section class="page-section">
+  <section class="page-section">
+    <div class="container-main">
+      <div class="seller">
+        <h2 class="seller__title">Best Sellers</h2>
+        <xo-grid style="--xs: 2; --sm: 2; --xl: 4; --xo-grid-col-gap: 30px">
+          <xo-animate xo-cascade xo-type="fade-up">
+            <a href="/test-FE/detail.html">
+              <div class="card-product">
+                <img src="assets/images/products/anh1.jpg" alt="anh1" />
+                <h3 class="card-product__name">Hills</h3>
+                <span class="card-product__price">$76</span>
+                <div class="list-color">
+                  <div class="list-color__item list-color__item--select" style="--color-item: #c9bfae"></div>
+                  <div class="list-color__item" style="--color-item: #a393b5"></div>
+                  <div class="list-color__item" style="--color-item: #ec978c"></div>
+                  <div class="list-color__item" style="--color-item: #ec978c"></div>
+                </div>
+              </div>
+            </a>
+          </xo-animate>
+
+          <xo-animate xo-cascade xo-type="fade-up">
+            <a href="/test-FE/detail.html">
+              <div class="card-product">
+                <img src="assets/images/products/anh2.jpg" alt="anh1" />
+                <h3 class="card-product__name">Hills</h3>
+                <span class="card-product__price">$76</span>
+                <div class="list-color">
+                  <div class="list-color__item list-color__item--select" style="--color-item: #c9bfae"></div>
+                  <div class="list-color__item" style="--color-item: #a393b5"></div>
+                  <div class="list-color__item" style="--color-item: #ec978c"></div>
+                  <div class="list-color__item" style="--color-item: #ec978c"></div>
+                </div>
+              </div>
+            </a>
+          </xo-animate>
+
+          <xo-animate xo-cascade xo-type="fade-up">
+            <a href="/test-FE/detail.html">
+              <div class="card-product">
+                <img src="assets/images/products/anh3.jpg" alt="anh1" />
+                <h3 class="card-product__name">Hills</h3>
+                <span class="card-product__price">$76</span>
+                <div class="list-color">
+                  <div class="list-color__item list-color__item--select" style="--color-item: #c9bfae"></div>
+                  <div class="list-color__item" style="--color-item: #a393b5"></div>
+                  <div class="list-color__item" style="--color-item: #ec978c"></div>
+                  <div class="list-color__item" style="--color-item: #ec978c"></div>
+                </div>
+              </div>
+            </a>
+          </xo-animate>
+
+          <xo-animate xo-cascade xo-type="fade-up">
+            <a href="/test-FE/detail.html">
+              <div class="card-product">
+                <img src="assets/images/products/anh4.jpg" alt="anh1" />
+                <h3 class="card-product__name">Hills</h3>
+                <span class="card-product__price">$76</span>
+                <div class="list-color">
+                  <div class="list-color__item list-color__item--select" style="--color-item: #c9bfae"></div>
+                  <div class="list-color__item" style="--color-item: #a393b5"></div>
+                  <div class="list-color__item" style="--color-item: #ec978c"></div>
+                  <div class="list-color__item" style="--color-item: #ec978c"></div>
+                </div>
+              </div>
+            </a>
+          </xo-animate>
+        </xo-grid>
+
+        <div class="seller__banner">
+          <a href="/test-FE/shop-all.html">Shop all</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section" style="--bg: #f6f6f6">
+    <div class="introduce-cases">
       <div class="container-main">
-        <div class="seller">
-          <h2 class="seller__title">Best Sellers</h2>
-          <xo-grid style="--xs: 2; --sm: 2; --xl: 4; --xo-grid-col-gap: 30px">
+        <h3 class="introduce-cases__title">Extreme Cases MagSafe Compatible</h3>
+        <xo-grid style="--xs: 1; --md: 3; --xo-grid-col-gap: 30px" class="introduce-cases__list">
+          <xo-animate xo-cascade xo-type="fade-up">
+            <div class="introduce-cases__item">
+              <span>01</span>
+              <img src="assets/images/products/cases1.jpg" alt="case1" />
+              <p>Essentials by CASETiFY™ The Beauty of Simplicity</p>
+            </div>
+          </xo-animate>
+
+          <div class="introduce-cases__item introduce-cases__item--second">
+            <span>02</span>
+            <p>Defy Gravity With The New Bounce Case</p>
+          </div>
+
+          <xo-animate xo-cascade xo-type="fade-up">
+            <div class="introduce-cases__item introduce-cases__item--third">
+              <span>03</span>
+              <img src="assets/images/products/cases3.jpg" alt="case1" />
+              <p>Spice up your mirror selfies with a little Y2K</p>
+            </div>
+          </xo-animate>
+        </xo-grid>
+
+        <xo-carousel xo-per-view="1" xo-render-bullet="<span class='carousel-bullet'></span>"
+          class="introduce-cases__slide">
+          <xo-carousel-inner>
+            <xo-carousel-list>
+              <xo-carousel-slide>
+                <div class="carousel-item">
+                  <xo-animate xo-cascade xo-type="fade-up">
+                    <div class="introduce-cases__item">
+                      <span>01</span>
+                      <img src="assets/images/products/cases1.jpg" alt="case1" />
+                      <p>Essentials by CASETiFY™ The Beauty of Simplicity</p>
+                    </div>
+                  </xo-animate>
+                </div>
+              </xo-carousel-slide>
+              <xo-carousel-slide>
+                <div class="introduce-cases__item introduce-cases__item--second">
+                  <span>02</span>
+                  <p>Defy Gravity With The New Bounce Case</p>
+                </div>
+              </xo-carousel-slide>
+              <xo-carousel-slide>
+                <xo-animate xo-cascade xo-type="fade-up">
+                  <div class="introduce-cases__item introduce-cases__item--third">
+                    <span>03</span>
+                    <img src="assets/images/products/cases3.jpg" alt="case1" />
+                    <p>Spice up your mirror selfies with a little Y2K</p>
+                  </div>
+                </xo-animate>
+              </xo-carousel-slide>
+            </xo-carousel-list>
+          </xo-carousel-inner>
+          <xo-carousel-pagination></xo-carousel-pagination>
+        </xo-carousel>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section featured" style="position: relative;">
+    <xo-parallax xo-lerp-ease="0.1" class="bg-parallax__item">
+      <xo-parallax-scroll xo-keyframes="{
+              '0%': { backgroundPositionY: '200px' },
+              '100%': { backgroundPositionY: '-200px' },
+            }" class="bg-parallax__url" style="background-image: url('/assets/images/products/featured-product.jpg')">
+        <div class="featured">
+          <div class="container-main">
+            <h2 class="featured__title">
+              Spice up your mirror selfies with a little phone
+            </h2>
+            <div class="featured-card">
+              <img src="assets/images/products/anh5.jpg" alt="anh" class="featured-card__img" />
+              <div class="featured-card__infor">
+                <span class="featured-card__name">Limone Case</span>
+                <p class="featured-card__des">
+                  Yes, we ship all over the world. Shipping costs will apply
+                </p>
+                <div class="featured-card__price">
+                  <div>
+                    <span class="featured-card__price-new">$20.00</span>
+                    <span class="featured-card__price-old">$58.00</span>
+                  </div>
+                  <a href="#">
+                    <div class="featured-card__add-cart">+</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </xo-parallax-scroll>
+    </xo-parallax>
+  </section>
+
+  <section class="page-section">
+    <div class="container-main">
+      <div class="featured-collection">
+        <xo-grid style="--xs: 1; --lg: 2;--xo-grid-col-gap: 15px">
+          <div class="featured-collection__left">
+            <p>Extreme Case Compatible</p>
+          </div>
+          <xo-grid style="--xs: 2; --xo-grid-col-gap: 15px; --xo-grid-row-gap: 15px">
             <xo-animate xo-cascade xo-type="fade-up">
               <a href="/test-FE/detail.html">
                 <div class="card-product">
@@ -101,9 +286,7 @@
                   <h3 class="card-product__name">Hills</h3>
                   <span class="card-product__price">$76</span>
                   <div class="list-color">
-                    <div
-                      class="list-color__item list-color__item--select" style="--color-item: #c9bfae"
-                    ></div>
+                    <div class="list-color__item list-color__item--select" style="--color-item: #c9bfae"></div>
                     <div class="list-color__item" style="--color-item: #a393b5"></div>
                     <div class="list-color__item" style="--color-item: #ec978c"></div>
                     <div class="list-color__item" style="--color-item: #ec978c"></div>
@@ -119,9 +302,7 @@
                   <h3 class="card-product__name">Hills</h3>
                   <span class="card-product__price">$76</span>
                   <div class="list-color">
-                    <div
-                      class="list-color__item list-color__item--select" style="--color-item: #c9bfae"
-                    ></div>
+                    <div class="list-color__item list-color__item--select" style="--color-item: #c9bfae"></div>
                     <div class="list-color__item" style="--color-item: #a393b5"></div>
                     <div class="list-color__item" style="--color-item: #ec978c"></div>
                     <div class="list-color__item" style="--color-item: #ec978c"></div>
@@ -137,9 +318,7 @@
                   <h3 class="card-product__name">Hills</h3>
                   <span class="card-product__price">$76</span>
                   <div class="list-color">
-                    <div
-                      class="list-color__item list-color__item--select" style="--color-item: #c9bfae"
-                    ></div>
+                    <div class="list-color__item list-color__item--select" style="--color-item: #c9bfae"></div>
                     <div class="list-color__item" style="--color-item: #a393b5"></div>
                     <div class="list-color__item" style="--color-item: #ec978c"></div>
                     <div class="list-color__item" style="--color-item: #ec978c"></div>
@@ -155,9 +334,7 @@
                   <h3 class="card-product__name">Hills</h3>
                   <span class="card-product__price">$76</span>
                   <div class="list-color">
-                    <div
-                      class="list-color__item list-color__item--select" style="--color-item: #c9bfae"
-                    ></div>
+                    <div class="list-color__item list-color__item--select" style="--color-item: #c9bfae"></div>
                     <div class="list-color__item" style="--color-item: #a393b5"></div>
                     <div class="list-color__item" style="--color-item: #ec978c"></div>
                     <div class="list-color__item" style="--color-item: #ec978c"></div>
@@ -166,330 +343,148 @@
               </a>
             </xo-animate>
           </xo-grid>
-
-          <div class="seller__banner">
-              <a href="/test-FE/shop-all.html">Shop all</a>
-            </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="page-section" style="--bg: #f6f6f6">
-      <div class="introduce-cases">
-        <div class="container-main">
-          <h3 class="introduce-cases__title">Extreme Cases MagSafe Compatible</h3>
-          <div class="introduce-cases__list grid" style="--row: 3; --gap: 60px">
-            <xo-animate xo-cascade xo-type="fade-up">
-              <div class="introduce-cases__item">
-                <span>01</span>
-                <img src="assets/images/products/cases1.jpg" alt="case1" />
-                <p>Essentials by CASETiFY™ The Beauty of Simplicity</p>
-              </div>
-            </xo-animate>
-
-              <div class="introduce-cases__item introduce-cases__item--second">
-                <span>02</span>
-                <p>Defy Gravity With The New Bounce Case</p>
-              </div>
-
-            <xo-animate xo-cascade xo-type="fade-up">
-              <div class="introduce-cases__item introduce-cases__item--third">
-                <span>03</span>
-                <img src="assets/images/products/cases3.jpg" alt="case1" />
-                <p>Spice up your mirror selfies with a little Y2K</p>
-              </div>
-            </xo-animate>
-          </div>
-  
-          <div class="process-bar">
-            <div class="progress-bar__fill"></div>
-            <div class="progress-bar__step"></div>
-            <div class="progress-bar__step"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- <section class="page-section" style="--bg: url('/assets/images/products/featured-product.jpg');">
-      <div class="featured">
-        <div class="container-main">
-          <h2 class="featured__title">
-            Spice up your mirror selfies with a little phone
-          </h2>
-          <div class="featured-card">
-            <img
-              src="assets/images/products/anh5.jpg"
-              alt="anh"
-              class="featured-card__img"
-            />
-            <div class="featured-card__infor">
-              <span class="featured-card__name">Limone Case</span>
-              <p class="featured-card__des">
-                Yes, we ship all over the world. Shipping costs will apply
-              </p>
-              <div class="featured-card__price">
-                <div>
-                  <span class="featured-card__price-new">$20.00</span>
-                  <span class="featured-card__price-old">$58.00</span>
-                </div>
-                <a href="#">
-                  <div class="featured-card__add-cart">+</div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <section class="page-section featured" style="position: relative;">
-        <xo-parallax xo-lerp-ease="0.1" class="bg-parallax__item">
-          <xo-parallax-scroll
-            xo-keyframes="{
-              '0%': { backgroundPositionY: '200px' },
-              '100%': { backgroundPositionY: '-200px' },
-            }"
-            class="bg-parallax__url"
-            style="background-image: url('/assets/images/products/featured-product.jpg')"
-          >
-          <div class="featured">
-            <div class="container-main">
-              <h2 class="featured__title">
-                Spice up your mirror selfies with a little phone
-              </h2>
-              <div class="featured-card">
-                <img
-                  src="assets/images/products/anh5.jpg"
-                  alt="anh"
-                  class="featured-card__img"
-                />
-                <div class="featured-card__infor">
-                  <span class="featured-card__name">Limone Case</span>
-                  <p class="featured-card__des">
-                    Yes, we ship all over the world. Shipping costs will apply
-                  </p>
-                  <div class="featured-card__price">
-                    <div>
-                      <span class="featured-card__price-new">$20.00</span>
-                      <span class="featured-card__price-old">$58.00</span>
-                    </div>
-                    <a href="#">
-                      <div class="featured-card__add-cart">+</div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          </xo-parallax-scroll>
-        </xo-parallax>
-    </section>
-
-    <section class="page-section">
-      <div class="container-main">
-        <div class="featured-collection">
-          <xo-grid style="--xs: 1; --lg: 2;--xo-grid-col-gap: 15px">
-            <div class="featured-collection__left">
-              <p>Extreme Case Compatible</p>
-            </div>
-            <xo-grid style="--xs: 2;; --xo-grid-col-gap: 15px; --xo-grid-row-gap: 15px">
-              <xo-animate xo-cascade xo-type="fade-up">
-                <a href="/test-FE/detail.html">
-                  <div class="card-product">
-                    <img src="assets/images/products/anh1.jpg" alt="anh1" />
-                    <h3 class="card-product__name">Hills</h3>
-                    <span class="card-product__price">$76</span>
-                    <div class="list-color">
-                      <div
-                        class="list-color__item list-color__item--select" style="--color-item: #c9bfae"
-                      ></div>
-                      <div class="list-color__item" style="--color-item: #a393b5"></div>
-                      <div class="list-color__item" style="--color-item: #ec978c"></div>
-                      <div class="list-color__item" style="--color-item: #ec978c"></div>
-                    </div>
-                  </div>
-                </a>
-              </xo-animate>
-  
-              <xo-animate xo-cascade xo-type="fade-up">
-                <a href="/test-FE/detail.html">
-                  <div class="card-product">
-                    <img src="assets/images/products/anh2.jpg" alt="anh1" />
-                    <h3 class="card-product__name">Hills</h3>
-                    <span class="card-product__price">$76</span>
-                    <div class="list-color">
-                      <div
-                        class="list-color__item list-color__item--select" style="--color-item: #c9bfae"
-                      ></div>
-                      <div class="list-color__item" style="--color-item: #a393b5"></div>
-                      <div class="list-color__item" style="--color-item: #ec978c"></div>
-                      <div class="list-color__item" style="--color-item: #ec978c"></div>
-                    </div>
-                  </div>
-                </a>
-              </xo-animate>
-  
-              <xo-animate xo-cascade xo-type="fade-up">
-                <a href="/test-FE/detail.html">
-                  <div class="card-product">
-                    <img src="assets/images/products/anh3.jpg" alt="anh1" />
-                    <h3 class="card-product__name">Hills</h3>
-                    <span class="card-product__price">$76</span>
-                    <div class="list-color">
-                      <div
-                        class="list-color__item list-color__item--select" style="--color-item: #c9bfae"
-                      ></div>
-                      <div class="list-color__item" style="--color-item: #a393b5"></div>
-                      <div class="list-color__item" style="--color-item: #ec978c"></div>
-                      <div class="list-color__item" style="--color-item: #ec978c"></div>
-                    </div>
-                  </div>
-                </a>
-              </xo-animate>
-  
-              <xo-animate xo-cascade xo-type="fade-up">
-                <a href="/test-FE/detail.html">
-                  <div class="card-product">
-                    <img src="assets/images/products/anh4.jpg" alt="anh1" />
-                    <h3 class="card-product__name">Hills</h3>
-                    <span class="card-product__price">$76</span>
-                    <div class="list-color">
-                      <div
-                        class="list-color__item list-color__item--select" style="--color-item: #c9bfae"
-                      ></div>
-                      <div class="list-color__item" style="--color-item: #a393b5"></div>
-                      <div class="list-color__item" style="--color-item: #ec978c"></div>
-                      <div class="list-color__item" style="--color-item: #ec978c"></div>
-                    </div>
-                  </div>
-                </a>
-              </xo-animate>
-            </xo-grid>
-          </xo-grid>
-          <!-- <div class="featured-collection__list grid" style="--row: 2; --gap: 15px">
-          </div> -->
-        </div>
-      </div>
-    </section>
-
-    <section class="page-section">
-      <div class="container-main">
-        <div class="test-imonials">
-          <h5 class="test-imonials__title">Customers say about us</h5>
-          <div class="navigate-button">
-            <div><img src="assets/icons/arrowdown.svg" alt="icons" /></div>
-            <div>
-              <img
-                src="assets/icons/arrowdown.svg"
-                alt="icons"
-                style="rotate: 180deg"
-              />
-            </div>
-          </div>
-          <div class="comment">
-            <p class="comment__title">
-              “This means that once you use different template designs for actual
-              testimonial website widgets, you can make images from them and post
-              them as image.”
-            </p>
-            <h3 class="comment__user-name">Johny Angelo</h3>
-          </div>
-          <div class="test-imonials__user" style="--width-image-user: 60px; --url-user: url('assets/images/users/anh1.jpg'); --top: 265px; --left: 98px;"></div>
-          <div class="test-imonials__user" style="--width-image-user: 93px; --url-user: url('assets/images/users/anh2.jpg'); --top: 115px; --left: 384px;"></div>
-          <div class="test-imonials__user" style="--width-image-user: 81px; --url-user: url('assets/images/users/anh3.jpg'); --top: 378px; --left: 358px;"></div>
-          <div class="test-imonials__user" style="--width-image-user: 124px; --url-user: url('assets/images/users/anh4.jpg'); --top: 248px; --left: 584px;"></div>
-          <div class="test-imonials__user" style="--width-image-user: 66px; --url-user: url('assets/images/users/anh5.jpg'); --top: 330px; --right: 604px;"></div>
-          <div class="test-imonials__user" style="--width-image-user: 113px; --url-user: url('assets/images/users/anh3.jpg'); --top: 329px; --right: 227px;"></div>
-          <div class="test-imonials__user" style="--width-image-user: 71px; --url-user: url('assets/images/users/anh7.jpg'); --top: 177px; --right: 134px;"></div>
-        </div>
-      </div>
-    </section>
-    
-    <section class="page-section">
-      <div class="collection-list container-main">
-        <xo-grid style="--xs: 1; --sm: 2; --lg: 3; --xo-grid-col-gap: 30px;">
-          <div class="collection-list__item" style="--bg-collection-item: url('assets/images/products/collection1.jpg')">
-            <h3 class="collection-list__title">Super Protect</h3>
-            <a href="/test-FE/shop-all.html">Shop all</a>
-          </div>
-          <div class="collection-list__item" style="--bg-collection-item: url('assets/images/products/collection2.jpg')">
-            <h3 class="collection-list__title">Collaboration</h3>
-            <a href="/test-FE/shop-all.html">Shop all</a>
-          </div>
-          <div class="collection-list__item" style="--bg-collection-item: url('assets/images/products/collection3.jpg')">
-            <h3 class="collection-list__title">Slim Case</h3>
-            <a href="/test-FE/shop-all.html">Shop all</a>
-          </div>
         </xo-grid>
+        <!-- <div class="featured-collection__list grid" style="--row: 2; --gap: 15px">
+          </div> -->
       </div>
-    </section>
+    </div>
+  </section>
 
-    <footer class="footer">
-      <div class="container-base">
-        <div class="footer__content">
-          <div class="footer__content-left">
-            <img src="assets/icons/logo.svg" alt="logo">
-            <p>This means that once you use different template designs for actual testimonial website widgets, you can make images from them and post</p>
-            <div class="footer__content-socials">
-              <img src="assets/icons/socials/facebook.svg" alt="icon">
-              <img src="assets/icons/socials/pinterest.svg" alt="icon">
-              <img src="assets/icons/socials/tiktok.svg" alt="icon">
-              <img src="assets/icons/socials/insta.svg" alt="icon">
-            </div>
-          </div>
-          
-          <div class="footer__content-right">
-            <div class="footer__content-menu">
-              <h2>HOME</h2>
-              <a href="#">Shop</a>
-              <a href="#">Collection</a>
-              <a href="#">About us</a>
-              <a href="#">Blogs</a>
-              <a href="#">Contact</a>
-            </div>
-            <div class="footer__content-menu">
-              <h2>COLLECTION</h2>
-              <a href="#">Sprring Summer</a>
-              <a href="#">Summer Nautica  </a>
-              <a href="#">Ocean Ocean 2023</a>
-              <a href="#">Blogs</a>
-              <a href="#">Contact</a>
-            </div>
-          </div>
-        </div>
-  
-        <div class="footer__input">
-          <input placeholder="Enter your email..." >
+  <section class="page-section">
+    <div class="container-main">
+      <div class="test-imonials">
+        <h5 class="test-imonials__title">Customers say about us</h5>
+        <div class="navigate-button">
+          <div><img src="assets/icons/arrowdown.svg" alt="icons" /></div>
           <div>
-            <img
-              src="assets/icons/arrowdown.svg"
-              alt="icons"
-              style="rotate: 180deg"
-            />
+            <img src="assets/icons/arrowdown.svg" alt="icons" style="rotate: 180deg" />
           </div>
         </div>
-  
-        <div class="footer__pay">
-          <div class="footer__pay-left">
-            <span>Term</span>
-            <div></div>
-            <span>Policy Privicy</span>
+        <div class="comment">
+          <p class="comment__title">
+            “This means that once you use different template designs for actual
+            testimonial website widgets, you can make images from them and post
+            them as image.”
+          </p>
+          <h3 class="comment__user-name">Johny Angelo</h3>
+        </div>
+        <div class="test-imonials__user"
+          style="--width-image-user: 60px; --url-user: url('assets/images/users/anh1.jpg'); --top: 265px; --left: 98px;">
+        </div>
+        <div class="test-imonials__user"
+          style="--width-image-user: 93px; --url-user: url('assets/images/users/anh2.jpg'); --top: 115px; --left: 384px;">
+        </div>
+        <div class="test-imonials__user"
+          style="--width-image-user: 81px; --url-user: url('assets/images/users/anh3.jpg'); --top: 378px; --left: 358px;">
+        </div>
+        <div class="test-imonials__user"
+          style="--width-image-user: 124px; --url-user: url('assets/images/users/anh4.jpg'); --top: 248px; --left: 584px;">
+        </div>
+        <div class="test-imonials__user"
+          style="--width-image-user: 66px; --url-user: url('assets/images/users/anh5.jpg'); --top: 330px; --right: 604px;">
+        </div>
+        <div class="test-imonials__user"
+          style="--width-image-user: 113px; --url-user: url('assets/images/users/anh3.jpg'); --top: 329px; --right: 227px;">
+        </div>
+        <div class="test-imonials__user"
+          style="--width-image-user: 71px; --url-user: url('assets/images/users/anh7.jpg'); --top: 177px; --right: 134px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="collection-list container-main">
+      <xo-grid style="--xs: 1; --sm: 2; --lg: 3; --xo-grid-col-gap: 30px;">
+        <div class="collection-list__item" style="--bg-collection-item: url('assets/images/products/collection1.jpg')">
+          <h3 class="collection-list__title">Super Protect</h3>
+          <a href="/test-FE/shop-all.html">Shop all</a>
+        </div>
+        <div class="collection-list__item" style="--bg-collection-item: url('assets/images/products/collection2.jpg')">
+          <h3 class="collection-list__title">Collaboration</h3>
+          <a href="/test-FE/shop-all.html">Shop all</a>
+        </div>
+        <div class="collection-list__item" style="--bg-collection-item: url('assets/images/products/collection3.jpg')">
+          <h3 class="collection-list__title">Slim Case</h3>
+          <a href="/test-FE/shop-all.html">Shop all</a>
+        </div>
+      </xo-grid>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container-base">
+      <div class="footer__content">
+        <div class="footer__content-left">
+          <img src="assets/icons/logo.svg" alt="logo">
+          <p>This means that once you use different template designs for actual testimonial website widgets, you can
+            make images from them and post</p>
+          <div class="footer__content-socials">
+            <img src="assets/icons/socials/facebook.svg" alt="icon">
+            <img src="assets/icons/socials/pinterest.svg" alt="icon">
+            <img src="assets/icons/socials/tiktok.svg" alt="icon">
+            <img src="assets/icons/socials/insta.svg" alt="icon">
           </div>
-          <div class="footer__pay-right">
-            <img src="assets/icons/pay/shopay.svg" alt="paypal">
-            <img src="assets/icons/pay/visa.svg" alt="visa">
-            <img src="assets/icons/pay/mastercard.svg" alt="mastercard">
-            <div class="footer__pay-apple">
-              <img src="assets/icons/pay/apple.svg" alt="americanexpress">
-            </div>
-            <img src="assets/icons/pay/google.svg" alt="icon">
-            <img src="assets/icons/pay/amex.svg" alt="icon">
-            <div class="footer__pay-country">United States (USD$) <img src="assets/icons/arrowdownwhite.svg" alt="icon">
+        </div>
+
+        <div class="footer__content-right">
+          <div class="footer__content-menu">
+            <h2>HOME</h2>
+            <a href="#">Shop</a>
+            <a href="#">Collection</a>
+            <a href="#">About us</a>
+            <a href="#">Blogs</a>
+            <a href="#">Contact</a>
+          </div>
+          <div class="footer__content-menu">
+            <h2>COLLECTION</h2>
+            <a href="#">Sprring Summer</a>
+            <a href="#">Summer Nautica </a>
+            <a href="#">Ocean Ocean 2023</a>
+            <a href="#">Blogs</a>
+            <a href="#">Contact</a>
           </div>
         </div>
       </div>
-    </footer>
 
-    <script src="xo-webcomponents.js"></script>
-  </body>
+      <div class="footer__input">
+        <input placeholder="Enter your email...">
+        <div>
+          <img src="assets/icons/arrowdown.svg" alt="icons" style="rotate: 180deg" />
+        </div>
+      </div>
+
+      <div class="footer__pay">
+        <div class="footer__pay-left">
+          <span>Term</span>
+          <div></div>
+          <span>Policy Privicy</span>
+        </div>
+        <div class="footer__pay-right">
+          <img src="assets/icons/pay/shopay.svg" alt="paypal">
+          <img src="assets/icons/pay/visa.svg" alt="visa">
+          <img src="assets/icons/pay/mastercard.svg" alt="mastercard">
+          <div class="footer__pay-apple">
+            <img src="assets/icons/pay/apple.svg" alt="americanexpress">
+          </div>
+          <img src="assets/icons/pay/google.svg" alt="icon">
+          <img src="assets/icons/pay/amex.svg" alt="icon">
+          <div class="footer__pay-country">United States (USD$) <img src="assets/icons/arrowdownwhite.svg" alt="icon">
+          </div>
+        </div>
+      </div>
+  </footer>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const sidebarEl = document.querySelector('.sticky-sidebar-css');
+      xoSticky.subscribe(() => {
+        sidebarEl.style.top = `${xoSticky.getStickyHeight('top') + 10}px`;
+      })
+    })
+  </script>
+
+  <script src="xo-webcomponents.js"></script>
+</body>
+
 </html>

@@ -50,3 +50,9 @@
   outline: 1px solid #c2c2c2;
   outline-offset: 2px;
 }
+
+@media (max-width: 576px) {
+  .list-color {
+    display: none !important;
+  }
+}

@@ -62,56 +62,181 @@
         <div class="category">
           <h2 class="category__title">Shop by Category</h2>
           <p class="category__des">Protect your phone in style. From minimalist to drop-proof cases, we have your back</p>
-          <div class="category__list grid" style="--row: 6; --gap: 10px">
-            <a href="#">
-              <div class="category__item category__item--select">
-                <img src="assets/images/shop-all/products/ct1.jpg" alt="anh">
-                <span class="category__name">Case Iphone</span>
+
+            <!-- <xo-grid style="--xs: 1; --md: 6; --xo-grid-col-gap: 10px" class="category__list">
+              <a href="#">
+                <div class="category__item category__item--select">
+                  <img src="assets/images/shop-all/products/ct1.jpg" alt="anh">
+                  <span class="category__name">Case Iphone</span>
+                </div>
+              </a>
+              <a href="#">
+                <div class="category__item">
+                  <img src="assets/images/shop-all/products/ct2.jpg" alt="anh">
+                  <span class="category__name">Case Samsung</span>
+                </div>
+              </a>
+              <a href="#">
+                <div class="category__item">
+                  <img src="assets/images/shop-all/products/ct3.jpg" alt="anh">
+                  <span class="category__name">Case Xiaomi</span>
+                </div>
+              </a>
+              <a href="#">
+                <div class="category__item">
+                  <img src="assets/images/shop-all/products/ct4.jpg" alt="anh">
+                  <span class="category__name">Case Ipad</span>
+                </div>
+              </a>
+              <a href="#">
+                <div class="category__item">
+                  <img src="assets/images/shop-all/products/ct5.jpg" alt="anh">
+                  <span class="category__name">Case Apple Watch</span>
+                </div>
+              </a>
+              <a href="#">
+                <div class="category__item">
+                  <img src="assets/images/shop-all/products/ct6.jpg" alt="anh">
+                  <span class="category__name">Case AirPod</span>
+                </div>
+              </a>
+              <div class="navigate-button">
+                <div><img src="assets/icons/arrowdown.svg" alt="icons" /></div>
+                <div>
+                  <img
+                    src="assets/icons/arrowdown.svg"
+                    alt="icons"
+                    style="rotate: 180deg"
+                  />
+                </div>
               </div>
-            </a>
-            <a href="#">
-              <div class="category__item">
-                <img src="assets/images/shop-all/products/ct2.jpg" alt="anh">
-                <span class="category__name">Case Samsung</span>
-              </div>
-            </a>
-            <a href="#">
-              <div class="category__item">
-                <img src="assets/images/shop-all/products/ct3.jpg" alt="anh">
-                <span class="category__name">Case Xiaomi</span>
-              </div>
-            </a>
-            <a href="#">
-              <div class="category__item">
-                <img src="assets/images/shop-all/products/ct4.jpg" alt="anh">
-                <span class="category__name">Case Ipad</span>
-              </div>
-            </a>
-            <a href="#">
-              <div class="category__item">
-                <img src="assets/images/shop-all/products/ct5.jpg" alt="anh">
-                <span class="category__name">Case Apple Watch</span>
-              </div>
-            </a>
-            <a href="#">
-              <div class="category__item">
-                <img src="assets/images/shop-all/products/ct6.jpg" alt="anh">
-                <span class="category__name">Case AirPod</span>
-              </div>
-            </a>
+            </xo-grid> -->
   
-            <div class="navigate-button">
-              <div><img src="assets/icons/arrowdown.svg" alt="icons" /></div>
-              <div>
-                <img
-                  src="assets/icons/arrowdown.svg"
-                  alt="icons"
-                  style="rotate: 180deg"
-                />
+            <xo-carousel
+            xo-per-view="6.5"
+            xo-render-bullet="<span class='carousel-bullet'></span>"
+            xo-gap="15"
+            class="category__list"
+          >
+            <xo-carousel-inner>
+              <xo-animate xo-cascade xo-type="fade-up">
+                <xo-carousel-list>
+                  <xo-carousel-slide>
+                    <a href="#">
+                      <div class="category__item category__item--select">
+                        <img src="assets/images/shop-all/products/ct1.jpg" alt="anh">
+                        <span class="category__name">Case Iphone</span>
+                      </div>
+                    </a>
+                  </xo-carousel-slide>
+                  <xo-carousel-slide>
+                    <a href="#">
+                      <div class="category__item">
+                        <img src="assets/images/shop-all/products/ct2.jpg" alt="anh">
+                        <span class="category__name">Case Samsung</span>
+                      </div>
+                    </a>
+                  </xo-carousel-slide>
+                  <xo-carousel-slide>
+                    <a href="#">
+                      <div class="category__item">
+                        <img src="assets/images/shop-all/products/ct3.jpg" alt="anh">
+                        <span class="category__name">Case Xiaomi</span>
+                      </div>
+                    </a>
+                  </xo-carousel-slide>
+                  <xo-carousel-slide>
+                    <a href="#">
+                      <div class="category__item">
+                        <img src="assets/images/shop-all/products/ct4.jpg" alt="anh">
+                        <span class="category__name">Case Ipad</span>
+                      </div>
+                    </a>
+                  </xo-carousel-slide>
+                  <xo-carousel-slide>
+                    <a href="#">
+                      <div class="category__item">
+                        <img src="assets/images/shop-all/products/ct5.jpg" alt="anh">
+                        <span class="category__name">Case Apple Watch</span>
+                      </div>
+                    </a>
+                  </xo-carousel-slide>
+                  <xo-carousel-slide>
+                    <a href="#">
+                      <div class="category__item">
+                        <img src="assets/images/shop-all/products/ct6.jpg" alt="anh">
+                        <span class="category__name">Case AirPod</span>
+                      </div>
+                    </a>
+                  </xo-carousel-slide>
+                  <xo-carousel-slide>
+                    <a href="#">
+                      <div class="category__item ">
+                        <img src="assets/images/shop-all/products/ct1.jpg" alt="anh">
+                        <span class="category__name">Case Iphone</span>
+                      </div>
+                    </a>
+                  </xo-carousel-slide>
+                  <xo-carousel-slide>
+                    <a href="#">
+                      <div class="category__item">
+                        <img src="assets/images/shop-all/products/ct2.jpg" alt="anh">
+                        <span class="category__name">Case Samsung</span>
+                      </div>
+                    </a>
+                  </xo-carousel-slide>
+                  <xo-carousel-slide>
+                    <a href="#">
+                      <div class="category__item">
+                        <img src="assets/images/shop-all/products/ct3.jpg" alt="anh">
+                        <span class="category__name">Case Xiaomi</span>
+                      </div>
+                    </a>
+                  </xo-carousel-slide>
+                  <xo-carousel-slide>
+                    <a href="#">
+                      <div class="category__item">
+                        <img src="assets/images/shop-all/products/ct4.jpg" alt="anh">
+                        <span class="category__name">Case Ipad</span>
+                      </div>
+                    </a>
+                  </xo-carousel-slide>
+                  <xo-carousel-slide>
+                    <a href="#">
+                      <div class="category__item">
+                        <img src="assets/images/shop-all/products/ct5.jpg" alt="anh">
+                        <span class="category__name">Case Apple Watch</span>
+                      </div>
+                    </a>
+                  </xo-carousel-slide>
+                  <xo-carousel-slide>
+                    <a href="#">
+                      <div class="category__item">
+                        <img src="assets/images/shop-all/products/ct6.jpg" alt="anh">
+                        <span class="category__name">Case AirPod</span>
+                      </div>
+                    </a>
+                  </xo-carousel-slide>
+                </xo-carousel-list>
+              </xo-animate>
+              <div class="navigate-button">
+                <xo-carousel-prev>
+                  <div><img src="assets/icons/arrowdown.svg" alt="icons" /></div>
+                </xo-carousel-prev>
+                <xo-carousel-next>
+                  <div>
+                    <img
+                      src="assets/icons/arrowdown.svg"
+                      alt="icons"
+                      style="rotate: 180deg"
+                    />
+                  </div>
+                </xo-carousel-next>
               </div>
-            </div>
+            </xo-carousel-inner>
+          </xo-carousel>
+
           </div>
-        </div>
       </div>
     </section>
 
@@ -126,189 +251,222 @@
 
     <section class="page-section">
       <div class="container-main">
-
         <xo-grid style="--xs: 2; --sm: 2; --xl: 4; --xo-grid-col-gap: 30px">
-          <a href="/test-FE/detail.html">
-            <div class="card-product">
-              <img src="assets/images/products/anh1.jpg" alt="anh1" />
-              <h3 class="card-product__name">Hills</h3>
-              <span class="card-product__price">$76</span>
-              <div class="list-color">
-                <div
-                  class="list-color__item list-color__item--select" style="--color-item: #c9bfae"
-                ></div>
-                <div class="list-color__item" style="--color-item: #a393b5"></div>
-                <div class="list-color__item" style="--color-item: #ec978c"></div>
-                <div class="list-color__item" style="--color-item: #ec978c"></div>
+          <xo-animate xo-cascade xo-type="fade-up">
+            <a href="/test-FE/detail.html">
+              <div class="card-product">
+                <img src="assets/images/products/anh1.jpg" alt="anh1" />
+                <h3 class="card-product__name">Hills</h3>
+                <span class="card-product__price">$76</span>
+                <div class="list-color">
+                  <div
+                    class="list-color__item list-color__item--select" style="--color-item: #c9bfae"
+                  ></div>
+                  <div class="list-color__item" style="--color-item: #a393b5"></div>
+                  <div class="list-color__item" style="--color-item: #ec978c"></div>
+                  <div class="list-color__item" style="--color-item: #ec978c"></div>
+                </div>
               </div>
-            </div>
-          </a>
-          <a href="/test-FE/detail.html">
-            <div class="card-product">
-              <img src="assets/images/products/anh2.jpg" alt="anh1" />
-              <h3 class="card-product__name">Hills</h3>
-              <span class="card-product__price">$76</span>
-              <div class="list-color">
-                <div
-                  class="list-color__item list-color__item--select" style="--color-item: #c9bfae"
-                ></div>
-                <div class="list-color__item" style="--color-item: #a393b5"></div>
-                <div class="list-color__item" style="--color-item: #ec978c"></div>
-                <div class="list-color__item" style="--color-item: #ec978c"></div>
+            </a>
+          </xo-animate>
+
+          <xo-animate xo-cascade xo-type="fade-up">
+            <a href="/test-FE/detail.html">
+              <div class="card-product">
+                <img src="assets/images/products/anh2.jpg" alt="anh1" />
+                <h3 class="card-product__name">Hills</h3>
+                <span class="card-product__price">$76</span>
+                <div class="list-color">
+                  <div
+                    class="list-color__item list-color__item--select" style="--color-item: #c9bfae"
+                  ></div>
+                  <div class="list-color__item" style="--color-item: #a393b5"></div>
+                  <div class="list-color__item" style="--color-item: #ec978c"></div>
+                  <div class="list-color__item" style="--color-item: #ec978c"></div>
+                </div>
               </div>
-            </div>
-          </a>
-          <a href="/test-FE/detail.html">
-            <div class="card-product">
-              <img src="assets/images/products/anh3.jpg" alt="anh1" />
-              <h3 class="card-product__name">Hills</h3>
-              <span class="card-product__price">$76</span>
-              <div class="list-color">
-                <div
-                  class="list-color__item list-color__item--select" style="--color-item: #c9bfae"
-                ></div>
-                <div class="list-color__item" style="--color-item: #a393b5"></div>
-                <div class="list-color__item" style="--color-item: #ec978c"></div>
-                <div class="list-color__item" style="--color-item: #ec978c"></div>
+            </a>
+          </xo-animate>
+
+          <xo-animate xo-cascade xo-type="fade-up">
+            <a href="/test-FE/detail.html">
+              <div class="card-product">
+                <img src="assets/images/products/anh3.jpg" alt="anh1" />
+                <h3 class="card-product__name">Hills</h3>
+                <span class="card-product__price">$76</span>
+                <div class="list-color">
+                  <div
+                    class="list-color__item list-color__item--select" style="--color-item: #c9bfae"
+                  ></div>
+                  <div class="list-color__item" style="--color-item: #a393b5"></div>
+                  <div class="list-color__item" style="--color-item: #ec978c"></div>
+                  <div class="list-color__item" style="--color-item: #ec978c"></div>
+                </div>
               </div>
-            </div>
-          </a>
-          <a href="/test-FE/detail.html">
-            <div class="card-product">
-              <img src="assets/images/products/anh4.jpg" alt="anh1" />
-              <h3 class="card-product__name">Hills</h3>
-              <span class="card-product__price">$76</span>
-              <div class="list-color">
-                <div
-                  class="list-color__item list-color__item--select" style="--color-item: #c9bfae"
-                ></div>
-                <div class="list-color__item" style="--color-item: #a393b5"></div>
-                <div class="list-color__item" style="--color-item: #ec978c"></div>
-                <div class="list-color__item" style="--color-item: #ec978c"></div>
+            </a>
+          </xo-animate>
+
+          <xo-animate xo-cascade xo-type="fade-up">
+            <a href="/test-FE/detail.html">
+              <div class="card-product">
+                <img src="assets/images/products/anh4.jpg" alt="anh1" />
+                <h3 class="card-product__name">Hills</h3>
+                <span class="card-product__price">$76</span>
+                <div class="list-color">
+                  <div
+                    class="list-color__item list-color__item--select" style="--color-item: #c9bfae"
+                  ></div>
+                  <div class="list-color__item" style="--color-item: #a393b5"></div>
+                  <div class="list-color__item" style="--color-item: #ec978c"></div>
+                  <div class="list-color__item" style="--color-item: #ec978c"></div>
+                </div>
               </div>
-            </div>
-          </a>
-          <a href="/test-FE/detail.html">
-            <div class="card-product">
-              <img src="assets/images/products/anh1.jpg" alt="anh1" />
-              <h3 class="card-product__name">Hills</h3>
-              <span class="card-product__price">$76</span>
-              <div class="list-color">
-                <div
-                  class="list-color__item list-color__item--select" style="--color-item: #c9bfae"
-                ></div>
-                <div class="list-color__item" style="--color-item: #a393b5"></div>
-                <div class="list-color__item" style="--color-item: #ec978c"></div>
-                <div class="list-color__item" style="--color-item: #ec978c"></div>
+            </a>
+          </xo-animate>
+          <xo-animate xo-cascade xo-type="fade-up">
+            <a href="/test-FE/detail.html">
+              <div class="card-product">
+                <img src="assets/images/products/anh1.jpg" alt="anh1" />
+                <h3 class="card-product__name">Hills</h3>
+                <span class="card-product__price">$76</span>
+                <div class="list-color">
+                  <div
+                    class="list-color__item list-color__item--select" style="--color-item: #c9bfae"
+                  ></div>
+                  <div class="list-color__item" style="--color-item: #a393b5"></div>
+                  <div class="list-color__item" style="--color-item: #ec978c"></div>
+                  <div class="list-color__item" style="--color-item: #ec978c"></div>
+                </div>
               </div>
-            </div>
-          </a>
-          <a href="/test-FE/detail.html">
-            <div class="card-product">
-              <img src="assets/images/products/anh2.jpg" alt="anh1" />
-              <h3 class="card-product__name">Hills</h3>
-              <span class="card-product__price">$76</span>
-              <div class="list-color">
-                <div
-                  class="list-color__item list-color__item--select" style="--color-item: #c9bfae"
-                ></div>
-                <div class="list-color__item" style="--color-item: #a393b5"></div>
-                <div class="list-color__item" style="--color-item: #ec978c"></div>
-                <div class="list-color__item" style="--color-item: #ec978c"></div>
+            </a>
+          </xo-animate>
+
+          <xo-animate xo-cascade xo-type="fade-up">
+            <a href="/test-FE/detail.html">
+              <div class="card-product">
+                <img src="assets/images/products/anh2.jpg" alt="anh1" />
+                <h3 class="card-product__name">Hills</h3>
+                <span class="card-product__price">$76</span>
+                <div class="list-color">
+                  <div
+                    class="list-color__item list-color__item--select" style="--color-item: #c9bfae"
+                  ></div>
+                  <div class="list-color__item" style="--color-item: #a393b5"></div>
+                  <div class="list-color__item" style="--color-item: #ec978c"></div>
+                  <div class="list-color__item" style="--color-item: #ec978c"></div>
+                </div>
               </div>
-            </div>
-          </a>
-          <a href="/test-FE/detail.html">
-            <div class="card-product">
-              <img src="assets/images/products/anh3.jpg" alt="anh1" />
-              <h3 class="card-product__name">Hills</h3>
-              <span class="card-product__price">$76</span>
-              <div class="list-color">
-                <div
-                  class="list-color__item list-color__item--select" style="--color-item: #c9bfae"
-                ></div>
-                <div class="list-color__item" style="--color-item: #a393b5"></div>
-                <div class="list-color__item" style="--color-item: #ec978c"></div>
-                <div class="list-color__item" style="--color-item: #ec978c"></div>
+            </a>
+          </xo-animate>
+
+          <xo-animate xo-cascade xo-type="fade-up">
+            <a href="/test-FE/detail.html">
+              <div class="card-product">
+                <img src="assets/images/products/anh3.jpg" alt="anh1" />
+                <h3 class="card-product__name">Hills</h3>
+                <span class="card-product__price">$76</span>
+                <div class="list-color">
+                  <div
+                    class="list-color__item list-color__item--select" style="--color-item: #c9bfae"
+                  ></div>
+                  <div class="list-color__item" style="--color-item: #a393b5"></div>
+                  <div class="list-color__item" style="--color-item: #ec978c"></div>
+                  <div class="list-color__item" style="--color-item: #ec978c"></div>
+                </div>
               </div>
-            </div>
-          </a>
-          <a href="/test-FE/detail.html">
-            <div class="card-product">
-              <img src="assets/images/products/anh4.jpg" alt="anh1" />
-              <h3 class="card-product__name">Hills</h3>
-              <span class="card-product__price">$76</span>
-              <div class="list-color">
-                <div
-                  class="list-color__item list-color__item--select" style="--color-item: #c9bfae"
-                ></div>
-                <div class="list-color__item" style="--color-item: #a393b5"></div>
-                <div class="list-color__item" style="--color-item: #ec978c"></div>
-                <div class="list-color__item" style="--color-item: #ec978c"></div>
+            </a>
+          </xo-animate>
+
+          <xo-animate xo-cascade xo-type="fade-up">
+            <a href="/test-FE/detail.html">
+              <div class="card-product">
+                <img src="assets/images/products/anh4.jpg" alt="anh1" />
+                <h3 class="card-product__name">Hills</h3>
+                <span class="card-product__price">$76</span>
+                <div class="list-color">
+                  <div
+                    class="list-color__item list-color__item--select" style="--color-item: #c9bfae"
+                  ></div>
+                  <div class="list-color__item" style="--color-item: #a393b5"></div>
+                  <div class="list-color__item" style="--color-item: #ec978c"></div>
+                  <div class="list-color__item" style="--color-item: #ec978c"></div>
+                </div>
               </div>
-            </div>
-          </a>
-          <a href="/test-FE/detail.html">
-            <div class="card-product">
-              <img src="assets/images/products/anh1.jpg" alt="anh1" />
-              <h3 class="card-product__name">Hills</h3>
-              <span class="card-product__price">$76</span>
-              <div class="list-color">
-                <div
-                  class="list-color__item list-color__item--select" style="--color-item: #c9bfae"
-                ></div>
-                <div class="list-color__item" style="--color-item: #a393b5"></div>
-                <div class="list-color__item" style="--color-item: #ec978c"></div>
-                <div class="list-color__item" style="--color-item: #ec978c"></div>
+            </a>
+          </xo-animate>
+          <xo-animate xo-cascade xo-type="fade-up">
+            <a href="/test-FE/detail.html">
+              <div class="card-product">
+                <img src="assets/images/products/anh1.jpg" alt="anh1" />
+                <h3 class="card-product__name">Hills</h3>
+                <span class="card-product__price">$76</span>
+                <div class="list-color">
+                  <div
+                    class="list-color__item list-color__item--select" style="--color-item: #c9bfae"
+                  ></div>
+                  <div class="list-color__item" style="--color-item: #a393b5"></div>
+                  <div class="list-color__item" style="--color-item: #ec978c"></div>
+                  <div class="list-color__item" style="--color-item: #ec978c"></div>
+                </div>
               </div>
-            </div>
-          </a>
-          <a href="/test-FE/detail.html">
-            <div class="card-product">
-              <img src="assets/images/products/anh2.jpg" alt="anh1" />
-              <h3 class="card-product__name">Hills</h3>
-              <span class="card-product__price">$76</span>
-              <div class="list-color">
-                <div
-                  class="list-color__item list-color__item--select" style="--color-item: #c9bfae"
-                ></div>
-                <div class="list-color__item" style="--color-item: #a393b5"></div>
-                <div class="list-color__item" style="--color-item: #ec978c"></div>
-                <div class="list-color__item" style="--color-item: #ec978c"></div>
+            </a>
+          </xo-animate>
+
+          <xo-animate xo-cascade xo-type="fade-up">
+            <a href="/test-FE/detail.html">
+              <div class="card-product">
+                <img src="assets/images/products/anh2.jpg" alt="anh1" />
+                <h3 class="card-product__name">Hills</h3>
+                <span class="card-product__price">$76</span>
+                <div class="list-color">
+                  <div
+                    class="list-color__item list-color__item--select" style="--color-item: #c9bfae"
+                  ></div>
+                  <div class="list-color__item" style="--color-item: #a393b5"></div>
+                  <div class="list-color__item" style="--color-item: #ec978c"></div>
+                  <div class="list-color__item" style="--color-item: #ec978c"></div>
+                </div>
               </div>
-            </div>
-          </a>
-          <a href="/test-FE/detail.html">
-            <div class="card-product">
-              <img src="assets/images/products/anh3.jpg" alt="anh1" />
-              <h3 class="card-product__name">Hills</h3>
-              <span class="card-product__price">$76</span>
-              <div class="list-color">
-                <div
-                  class="list-color__item list-color__item--select" style="--color-item: #c9bfae"
-                ></div>
-                <div class="list-color__item" style="--color-item: #a393b5"></div>
-                <div class="list-color__item" style="--color-item: #ec978c"></div>
-                <div class="list-color__item" style="--color-item: #ec978c"></div>
+            </a>
+          </xo-animate>
+
+          <xo-animate xo-cascade xo-type="fade-up">
+            <a href="/test-FE/detail.html">
+              <div class="card-product">
+                <img src="assets/images/products/anh3.jpg" alt="anh1" />
+                <h3 class="card-product__name">Hills</h3>
+                <span class="card-product__price">$76</span>
+                <div class="list-color">
+                  <div
+                    class="list-color__item list-color__item--select" style="--color-item: #c9bfae"
+                  ></div>
+                  <div class="list-color__item" style="--color-item: #a393b5"></div>
+                  <div class="list-color__item" style="--color-item: #ec978c"></div>
+                  <div class="list-color__item" style="--color-item: #ec978c"></div>
+                </div>
               </div>
-            </div>
-          </a>
-          <a href="/test-FE/detail.html">
-            <div class="card-product">
-              <img src="assets/images/products/anh4.jpg" alt="anh1" />
-              <h3 class="card-product__name">Hills</h3>
-              <span class="card-product__price">$76</span>
-              <div class="list-color">
-                <div
-                  class="list-color__item list-color__item--select" style="--color-item: #c9bfae"
-                ></div>
-                <div class="list-color__item" style="--color-item: #a393b5"></div>
-                <div class="list-color__item" style="--color-item: #ec978c"></div>
-                <div class="list-color__item" style="--color-item: #ec978c"></div>
+            </a>
+          </xo-animate>
+
+          <xo-animate xo-cascade xo-type="fade-up">
+            <a href="/test-FE/detail.html">
+              <div class="card-product">
+                <img src="assets/images/products/anh4.jpg" alt="anh1" />
+                <h3 class="card-product__name">Hills</h3>
+                <span class="card-product__price">$76</span>
+                <div class="list-color">
+                  <div
+                    class="list-color__item list-color__item--select" style="--color-item: #c9bfae"
+                  ></div>
+                  <div class="list-color__item" style="--color-item: #a393b5"></div>
+                  <div class="list-color__item" style="--color-item: #ec978c"></div>
+                  <div class="list-color__item" style="--color-item: #ec978c"></div>
+                </div>
               </div>
-            </div>
-          </a>
-        </xo-grid>  
+            </a>
+          </xo-animate>
+        </xo-grid> 
+
           <div class="pagination">
             <button class="pagination__arrow pagination__arrow--prev" disabled>‹</button>
             
@@ -329,6 +487,8 @@
 
     <section class="page-section">
       <div class="container-main">
+        <xo-grid style="--xs: 1; --sm:3; --xo-grid-col-gap: 15px; --xo-grid-row-gap: 15px">
+          </xo-grid>
         <div class="service grid" style="--row: 3; --gap: 29px">
           <div class="service__item">
             <img src="assets/icons/service/buynow.svg" alt="Buy Now Pay Later" class="service__icon" />
