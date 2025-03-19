@@ -404,10 +404,7 @@
   }
 
   .featured {
-    background-image: url("assets/images/products/featured-product.jpg");
     aspect-ratio: 0;
-    background-size: cover;
-    background-position: center;
     padding: 50px 0 !important;
     height: 530px;
   }
