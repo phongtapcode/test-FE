@@ -12,6 +12,8 @@
   bottom: 64px;
   left: 163px;
   letter-spacing: -5px;
+  display: flex;
+  gap: 1px;
 }
 
 .banner .banner__count {
@@ -54,6 +56,10 @@
     align-items: center;
     padding: 15px 0;
     border-radius: 8px;
+}
+
+.category__item:hover{
+  border: 1px solid #848484;
 }
 
 .category__item img{
@@ -109,11 +115,16 @@
     font-weight: 500;
     letter-spacing: -0.2px;
     opacity: 0.8;
+    cursor: pointer;
   }
 
   .fs__sort span {
     opacity: 0.5;
     margin-right: 8px;
+  }
+
+  .xo-sort-select__content {
+    width: 300px;
   }
 
   .service {

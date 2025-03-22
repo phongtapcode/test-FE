@@ -23,35 +23,35 @@
   </head>
   <body>
     <header class="header">
-      <img src="assets/icons/logoblack.svg" class="header__logo" />
-      <div class="header__menu" style="background-color: #f6f6f6">
-        <div class="header__menu-left">
-          <a href="#" class="header__menu-item">New & Featured</a>
-          <a href="#" class="header__menu-item">Collection</a>
-          <a href="#" class="header__menu-item">Customize</a>
-          <a href="#" class="header__menu-item">About us</a>
-          <a href="#" class="header__menu-item">Blog</a>
+      <xo-sticky class="sticky-header">
+        <div class="header-content">
+          <img src="assets/icons/logo.svg" class="header__logo" />
+          <div class="header__menu">
+            <div class="header__menu-left">
+              <a href="#" class="header__menu-item">New & Featured</a>
+              <a href="#" class="header__menu-item">Collection</a>
+              <a href="#" class="header__menu-item">Customize</a>
+              <a href="#" class="header__menu-item">About us</a>
+              <a href="#" class="header__menu-item">Blog</a>
+            </div>
+    
+            <img src="assets/icons/menubar.svg" alt="menubar" class="header__menu-icon" />
+    
+            <div class="header__menu-right">
+              <a href="#">
+                <img src="assets/icons/search.svg" alt="search" />
+              </a>
+              <a href="#">
+                <img src="assets/icons/user.svg" alt="user" />
+              </a>
+              <a href="#" class="header__menu-cart">
+                <img src="assets/icons/cart.svg" alt="cart" />
+                <span>22</span>
+              </a>
+            </div>
+          </div>
         </div>
-
-        <img
-          src="assets/icons/menubar.svg"
-          alt="menubar"
-          class="header__menu-icon"
-        />
-
-        <div class="header__menu-right">
-          <a href="#">
-            <img src="assets/icons/search.svg" alt="search" />
-          </a>
-          <a href="#">
-            <img src="assets/icons/user.svg" alt="user" />
-          </a>
-          <a href="#" class="header__menu-cart">
-            <img src="assets/icons/cart.svg" alt="cart" />
-            <span>22</span>
-          </a>
-        </div>
-      </div>
+      </xo-sticky>
     </header>
 
     <div class="line"></div>
@@ -875,30 +875,41 @@
           <div class="footer__content-left">
             <img src="assets/icons/logo.svg" alt="logo">
             <p>This means that once you use different template designs for actual testimonial website widgets, you can make images from them and post</p>
-            <div class="footer__content-socials">
+          <div class="footer__content-socials">
+            <xo-tooltip xo-title="facebook">
               <img src="assets/icons/socials/facebook.svg" alt="icon">
+            </xo-tooltip>
+
+            <xo-tooltip xo-title="pinterest">
               <img src="assets/icons/socials/pinterest.svg" alt="icon">
+            </xo-tooltip>
+
+            <xo-tooltip xo-title="tiktok">
               <img src="assets/icons/socials/tiktok.svg" alt="icon">
+            </xo-tooltip>
+
+            <xo-tooltip xo-title="insta">
               <img src="assets/icons/socials/insta.svg" alt="icon">
-            </div>
+            </xo-tooltip>
+          </div>
           </div>
           
           <div class="footer__content-right">
             <div class="footer__content-menu">
               <h2>HOME</h2>
-              <a href="#">Shop</a>
-              <a href="#">Collection</a>
-              <a href="#">About us</a>
-              <a href="#">Blogs</a>
-              <a href="#">Contact</a>
+              <a href="#" class="underline">Shop</a>
+              <a href="#" class="underline">Collection</a>
+              <a href="#" class="underline">About us</a>
+              <a href="#" class="underline">Blogs</a>
+              <a href="#" class="underline">Contact</a>
             </div>
             <div class="footer__content-menu">
               <h2>COLLECTION</h2>
-              <a href="#">Sprring Summer</a>
-              <a href="#">Summer Nautica  </a>
-              <a href="#">Ocean Ocean 2023</a>
-              <a href="#">Blogs</a>
-              <a href="#">Contact</a>
+              <a href="#" class="underline">Sprring Summer</a>
+              <a href="#" class="underline">Summer Nautica </a>
+              <a href="#" class="underline">Ocean Ocean 2023</a>
+              <a href="#" class="underline">Blogs</a>
+              <a href="#" class="underline">Contact</a>
             </div>
           </div>
         </div>
@@ -929,7 +940,7 @@
             </div>
             <img src="assets/icons/pay/google.svg" alt="icon">
             <img src="assets/icons/pay/amex.svg" alt="icon">
-            <div class="footer__pay-country">United States (USD$) <img src="assets/icons/arrowdownwhite.svg" alt="icon">
+            <div class="footer__currency-select">United States (USD$) <img src="assets/icons/arrowdownwhite.svg" alt="icon">
           </div>
         </div>
       </div>

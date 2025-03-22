@@ -31,10 +31,12 @@ footer {
   display: flex;
   gap: 16px;
   margin-top: 30px;
+  align-items: center;
 }
 
 .footer__content-socials img {
   width: 23px;
+  cursor: pointer;
 }
 
 .footer__content-right {
@@ -57,7 +59,7 @@ footer {
 }
 
 .footer__content-menu a {
-  
+  width: fit-content;
   padding-top: 12px;
   color: #fff;
 }
@@ -136,15 +138,35 @@ footer {
   border-radius: 3px;
 }
 
-.footer__pay-right .footer__pay-country {
+.footer__pay-right .footer__currency-select {
   display: flex;
   align-items: center;
   font-size: 14px;
   margin-left: 8px;
+  cursor: pointer;
 }
 
-.footer__pay-country img {
+.footer__currency-select img {
   margin-left: 6px;
+}
+
+.xo-currency-select__content {
+  background-color: white;
+  color: black;
+  width: 200px;
+  font-size: 16px;
+  top: 460px;
+}
+
+.xo-currency-select__item {
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.xo-currency-select__item:hover {
+  background-color: #ccc;
 }
 
 @media screen and (max-width: 992px) {

@@ -60,51 +60,63 @@
 
 <body>
 
-  <!-- <xo-sticky class="sticky-header"> -->
-    <header class="header">
-      <img src="assets/icons/logo.svg" class="header__logo" />
-      <div class="header__menu">
-        <div class="header__menu-left">
-          <a href="#" class="header__menu-item">New & Featured</a>
-          <a href="#" class="header__menu-item">Collection</a>
-          <a href="#" class="header__menu-item">Customize</a>
-          <a href="#" class="header__menu-item">About us</a>
-          <a href="#" class="header__menu-item">Blog</a>
-        </div>
-
-        <img src="assets/icons/menubar.svg" alt="menubar" class="header__menu-icon" />
-
-        <div class="header__menu-right">
-          <a href="#">
-            <img src="assets/icons/search.svg" alt="search" />
-          </a>
-          <a href="#">
-            <img src="assets/icons/user.svg" alt="user" />
-          </a>
-          <a href="#" class="header__menu-cart">
-            <img src="assets/icons/cart.svg" alt="cart" />
-            <span>22</span>
-          </a>
+  <header class="header">
+    <xo-sticky class="sticky-header">
+      <div class="header-content">
+        <img src="assets/icons/logo.svg" class="header__logo" />
+        <div class="header__menu">
+          <div class="header__menu-left">
+            <a href="#" class="header__menu-item">New & Featured</a>
+            <a href="#" class="header__menu-item">Collection</a>
+            <a href="#" class="header__menu-item">Customize</a>
+            <a href="#" class="header__menu-item">About us</a>
+            <a href="#" class="header__menu-item">Blog</a>
+          </div>
+  
+          <img src="assets/icons/menubar.svg" alt="menubar" class="header__menu-icon" />
+  
+          <div class="header__menu-right">
+            <a href="#">
+              <img src="assets/icons/search.svg" alt="search" />
+            </a>
+            <a href="#">
+              <img src="assets/icons/user.svg" alt="user" />
+            </a>
+            <a href="#" class="header__menu-cart">
+              <img src="assets/icons/cart.svg" alt="cart" />
+              <span>22</span>
+            </a>
+          </div>
         </div>
       </div>
-    </header>
-  <!-- </xo-sticky> -->
+    </xo-sticky>
+  </header>
 
   <section class="banner">
-    <div class="banner__title">Protection with style</div>
+    <h1 class="banner__title"><xo-animate xo-cascade xo-type="goo-1">Protection with style</xo-animate></h1>
   </section>
 
   <section class="page-section">
     <div class="container-main">
       <div class="seller">
-        <h2 class="seller__title">Best Sellers</h2>
+        <xo-animate xo-type="fade-down"> 
+          <h2 class="seller__title">Best Sellers</h2>
+        </xo-animate>
         <xo-grid style="--xs: 2; --sm: 2; --xl: 4; --xo-grid-col-gap: 30px">
           <xo-animate xo-cascade xo-type="fade-up">
             <a href="/test-FE/detail.html">
               <div class="card-product">
-                <img src="assets/images/products/anh1.jpg" alt="anh1" />
+                <div class="card-img">
+                  <div class="card-img__first">
+                    <img src="assets/images/products/anh1.jpg" alt="anh1" />
+                  </div>
+                  <div class="card-img__second">
+                    <img src="assets/images/products/anh5.jpg" alt="anh1" />
+                  </div>
+                </div>
                 <h3 class="card-product__name">Hills</h3>
                 <span class="card-product__price">$76</span>
+              </a>
                 <div class="list-color">
                   <div class="list-color__item list-color__item--select" style="--color-item: #c9bfae"></div>
                   <div class="list-color__item" style="--color-item: #a393b5"></div>
@@ -112,15 +124,22 @@
                   <div class="list-color__item" style="--color-item: #ec978c"></div>
                 </div>
               </div>
-            </a>
           </xo-animate>
 
           <xo-animate xo-cascade xo-type="fade-up">
             <a href="/test-FE/detail.html">
               <div class="card-product">
-                <img src="assets/images/products/anh2.jpg" alt="anh1" />
+                <div class="card-img">
+                  <div class="card-img__first">
+                    <img src="assets/images/products/anh2.jpg" alt="anh1" />
+                  </div>
+                  <div class="card-img__second">
+                    <img src="assets/images/products/anh5.jpg" alt="anh1" />
+                  </div>
+                </div>
                 <h3 class="card-product__name">Hills</h3>
                 <span class="card-product__price">$76</span>
+              </a>
                 <div class="list-color">
                   <div class="list-color__item list-color__item--select" style="--color-item: #c9bfae"></div>
                   <div class="list-color__item" style="--color-item: #a393b5"></div>
@@ -128,15 +147,22 @@
                   <div class="list-color__item" style="--color-item: #ec978c"></div>
                 </div>
               </div>
-            </a>
           </xo-animate>
 
           <xo-animate xo-cascade xo-type="fade-up">
             <a href="/test-FE/detail.html">
               <div class="card-product">
-                <img src="assets/images/products/anh3.jpg" alt="anh1" />
+                <div class="card-img">
+                  <div class="card-img__first">
+                    <img src="assets/images/products/anh3.jpg" alt="anh1" />
+                  </div>
+                  <div class="card-img__second">
+                    <img src="assets/images/products/anh2.jpg" alt="anh1" />
+                  </div>
+                </div>
                 <h3 class="card-product__name">Hills</h3>
                 <span class="card-product__price">$76</span>
+              </a>
                 <div class="list-color">
                   <div class="list-color__item list-color__item--select" style="--color-item: #c9bfae"></div>
                   <div class="list-color__item" style="--color-item: #a393b5"></div>
@@ -144,15 +170,22 @@
                   <div class="list-color__item" style="--color-item: #ec978c"></div>
                 </div>
               </div>
-            </a>
           </xo-animate>
 
           <xo-animate xo-cascade xo-type="fade-up">
             <a href="/test-FE/detail.html">
               <div class="card-product">
-                <img src="assets/images/products/anh4.jpg" alt="anh1" />
+                <div class="card-img">
+                  <div class="card-img__first">
+                    <img src="assets/images/products/anh4.jpg" alt="anh1" />
+                  </div>
+                  <div class="card-img__second">
+                    <img src="assets/images/products/anh5.jpg" alt="anh1" />
+                  </div>
+                </div>                
                 <h3 class="card-product__name">Hills</h3>
                 <span class="card-product__price">$76</span>
+              </a>
                 <div class="list-color">
                   <div class="list-color__item list-color__item--select" style="--color-item: #c9bfae"></div>
                   <div class="list-color__item" style="--color-item: #a393b5"></div>
@@ -160,13 +193,19 @@
                   <div class="list-color__item" style="--color-item: #ec978c"></div>
                 </div>
               </div>
-            </a>
           </xo-animate>
         </xo-grid>
 
-        <div class="seller__banner">
-          <a href="/test-FE/shop-all.html">Shop all</a>
-        </div>
+
+        <xo-animate xo-type="zoom-out" xo-duration="600">
+          <div class="seller__banner">
+            <xo-magnetic>
+              <xo-magnetic-content>
+                <a href="/test-FE/shop-all.html"><button class="button-1">Shop all</button></a>
+              </xo-magnetic-content>
+            </xo-magnetic>
+          </div>
+        </xo-animate>
       </div>
     </div>
   </section>
@@ -174,26 +213,31 @@
   <section class="page-section" style="--bg: #f6f6f6">
     <div class="introduce-cases">
       <div class="container-main">
-        <h3 class="introduce-cases__title">Extreme Cases MagSafe Compatible</h3>
+        <xo-animate xo-type="fade-down"> 
+          <h2 class="introduce-cases__title">Extreme Cases MagSafe Compatible</h2>
+        </xo-animate>
         <xo-grid style="--xs: 1; --md: 3; --xo-grid-col-gap: 30px" class="introduce-cases__list">
           <xo-animate xo-cascade xo-type="fade-up">
             <div class="introduce-cases__item">
               <span>01</span>
               <img src="assets/images/products/cases1.jpg" alt="case1" />
-              <p>Essentials by CASETiFY™ The Beauty of Simplicity</p>
+              <p>Essentials by CASETiFY™ <br/>The Beauty of Simplicity</p>
             </div>
           </xo-animate>
 
-          <div class="introduce-cases__item introduce-cases__item--second">
-            <span>02</span>
-            <p>Defy Gravity With The New Bounce Case</p>
-          </div>
+          <xo-animate xo-cascade xo-type="fade-up">
+            <div class="introduce-cases__item">
+              <span>02</span>
+              <img src="assets/images/products/cases1.jpg" alt="case1" />
+              <p>Defy Gravity With The <br/>New Bounce Case</p>
+            </div>
+          </xo-animate>
 
           <xo-animate xo-cascade xo-type="fade-up">
             <div class="introduce-cases__item introduce-cases__item--third">
               <span>03</span>
               <img src="assets/images/products/cases3.jpg" alt="case1" />
-              <p>Spice up your mirror selfies with a little Y2K</p>
+              <p>Spice up your mirror<br/> selfies with a little Y2K</p>
             </div>
           </xo-animate>
         </xo-grid>
@@ -203,21 +247,22 @@
           <xo-carousel-inner>
             <xo-carousel-list>
               <xo-carousel-slide>
-                <div class="carousel-item">
-                  <xo-animate xo-cascade xo-type="fade-up">
-                    <div class="introduce-cases__item">
-                      <span>01</span>
-                      <img src="assets/images/products/cases1.jpg" alt="case1" />
-                      <p>Essentials by CASETiFY™ The Beauty of Simplicity</p>
-                    </div>
-                  </xo-animate>
-                </div>
+                <xo-animate xo-cascade xo-type="fade-up">
+                  <div class="introduce-cases__item">
+                    <span>01</span>
+                    <img src="assets/images/products/cases1.jpg" alt="case1" />
+                    <p>Essentials by CASETiFY™ The Beauty of Simplicity</p>
+                  </div>
+                </xo-animate>
               </xo-carousel-slide>
               <xo-carousel-slide>
-                <div class="introduce-cases__item introduce-cases__item--second">
-                  <span>02</span>
-                  <p>Defy Gravity With The New Bounce Case</p>
-                </div>
+                <xo-animate xo-cascade xo-type="fade-up">
+                  <div class="introduce-cases__item">
+                    <span>02</span>
+                    <img src="assets/images/products/cases1.jpg" alt="case1" />
+                    <p>Defy Gravity With The New Bounce Case</p>
+                  </div>
+                </xo-animate>
               </xo-carousel-slide>
               <xo-carousel-slide>
                 <xo-animate xo-cascade xo-type="fade-up">
@@ -244,11 +289,15 @@
             }" class="bg-parallax__url" style="background-image: url('./assets/images/products/featured-product.jpg')">
         <div class="featured">
           <div class="container-main">
-            <h2 class="featured__title">
-              Spice up your mirror selfies with a little phone
-            </h2>
+            <xo-animate xo-cascade xo-type="fade-up">
+              <h2 class="featured__title">
+                Spice up your mirror selfies with a little phone
+              </h2>
+            </xo-animate>
             <div class="featured-card">
-              <img src="assets/images/products/anh5.jpg" alt="anh" class="featured-card__img" />
+              <a href="#">
+                <img src="assets/images/products/anh5.jpg" alt="anh" class="featured-card__img" />
+              </a>
               <div class="featured-card__infor">
                 <span class="featured-card__name">Limone Case</span>
                 <p class="featured-card__des">
@@ -259,9 +308,11 @@
                     <span class="featured-card__price-new">$20.00</span>
                     <span class="featured-card__price-old">$58.00</span>
                   </div>
-                  <a href="#">
-                    <div class="featured-card__add-cart">+</div>
-                  </a>
+                  <xo-tooltip xo-title="Add to cart">
+                    <a href="#">
+                      <div class="featured-card__add-cart"><img src="./assets/icons/plus-white.svg" alt=""></div>
+                    </a>
+                  </xo-tooltip>
                 </div>
               </div>
             </div>
@@ -275,16 +326,24 @@
     <div class="container-main">
       <div class="featured-collection">
         <xo-grid style="--xs: 1; --lg: 2;--xo-grid-col-gap: 15px">
-          <div class="featured-collection__left">
+          <div class="featured-collection__left xo-hover-bg" style="--bg-hover: url('assets/images/products/featured-collection.jpg')">
             <p>Extreme Case Compatible</p>
           </div>
           <xo-grid style="--xs: 2; --xo-grid-col-gap: 15px; --xo-grid-row-gap: 15px">
             <xo-animate xo-cascade xo-type="fade-up">
               <a href="/test-FE/detail.html">
                 <div class="card-product">
-                  <img src="assets/images/products/anh1.jpg" alt="anh1" />
+                  <div class="card-img">
+                    <div class="card-img__first">
+                      <img src="assets/images/products/anh1.jpg" alt="anh1" />
+                    </div>
+                    <div class="card-img__second">
+                      <img src="assets/images/products/anh2.jpg" alt="anh1" />
+                    </div>
+                  </div>                  
                   <h3 class="card-product__name">Hills</h3>
                   <span class="card-product__price">$76</span>
+                </a>
                   <div class="list-color">
                     <div class="list-color__item list-color__item--select" style="--color-item: #c9bfae"></div>
                     <div class="list-color__item" style="--color-item: #a393b5"></div>
@@ -292,15 +351,22 @@
                     <div class="list-color__item" style="--color-item: #ec978c"></div>
                   </div>
                 </div>
-              </a>
             </xo-animate>
 
             <xo-animate xo-cascade xo-type="fade-up">
               <a href="/test-FE/detail.html">
                 <div class="card-product">
-                  <img src="assets/images/products/anh2.jpg" alt="anh1" />
+                  <div class="card-img">
+                    <div class="card-img__first">
+                      <img src="assets/images/products/anh2.jpg" alt="anh1" />
+                    </div>
+                    <div class="card-img__second">
+                      <img src="assets/images/products/anh5.jpg" alt="anh1" />
+                    </div>
+                  </div>                  
                   <h3 class="card-product__name">Hills</h3>
                   <span class="card-product__price">$76</span>
+                </a>
                   <div class="list-color">
                     <div class="list-color__item list-color__item--select" style="--color-item: #c9bfae"></div>
                     <div class="list-color__item" style="--color-item: #a393b5"></div>
@@ -308,15 +374,22 @@
                     <div class="list-color__item" style="--color-item: #ec978c"></div>
                   </div>
                 </div>
-              </a>
             </xo-animate>
 
             <xo-animate xo-cascade xo-type="fade-up">
               <a href="/test-FE/detail.html">
                 <div class="card-product">
-                  <img src="assets/images/products/anh3.jpg" alt="anh1" />
+                  <div class="card-img">
+                    <div class="card-img__first">
+                      <img src="assets/images/products/anh3.jpg" alt="anh1" />
+                    </div>
+                    <div class="card-img__second">
+                      <img src="assets/images/products/anh4.jpg" alt="anh1" />
+                    </div>
+                  </div>                  
                   <h3 class="card-product__name">Hills</h3>
                   <span class="card-product__price">$76</span>
+                </a>
                   <div class="list-color">
                     <div class="list-color__item list-color__item--select" style="--color-item: #c9bfae"></div>
                     <div class="list-color__item" style="--color-item: #a393b5"></div>
@@ -324,15 +397,22 @@
                     <div class="list-color__item" style="--color-item: #ec978c"></div>
                   </div>
                 </div>
-              </a>
             </xo-animate>
 
             <xo-animate xo-cascade xo-type="fade-up">
               <a href="/test-FE/detail.html">
                 <div class="card-product">
-                  <img src="assets/images/products/anh4.jpg" alt="anh1" />
+                  <div class="card-img">
+                    <div class="card-img__first">
+                      <img src="assets/images/products/anh4.jpg" alt="anh1" />
+                    </div>
+                    <div class="card-img__second">
+                      <img src="assets/images/products/anh1.jpg" alt="anh1" />
+                    </div>
+                  </div>                  
                   <h3 class="card-product__name">Hills</h3>
                   <span class="card-product__price">$76</span>
+                </a>
                   <div class="list-color">
                     <div class="list-color__item list-color__item--select" style="--color-item: #c9bfae"></div>
                     <div class="list-color__item" style="--color-item: #a393b5"></div>
@@ -340,12 +420,9 @@
                     <div class="list-color__item" style="--color-item: #ec978c"></div>
                   </div>
                 </div>
-              </a>
             </xo-animate>
           </xo-grid>
         </xo-grid>
-        <!-- <div class="featured-collection__list grid" style="--row: 2; --gap: 15px">
-          </div> -->
       </div>
     </div>
   </section>
@@ -368,9 +445,14 @@
           </p>
           <h3 class="comment__user-name">Johny Angelo</h3>
         </div>
-        <div class="test-imonials__user"
-          style="--width-image-user: 60px; --url-user: url('assets/images/users/anh1.jpg'); --top: 265px; --left: 98px;">
-        </div>
+        <xo-magnetic>
+          <xo-magnetic-content>
+            <div></div>
+            <div class="test-imonials__user"
+              style="--width-image-user: 60px; --url-user: url('assets/images/users/anh1.jpg'); --top: 265px; --left: 98px;">
+            </div>
+          </xo-magnetic-content>
+        </xo-magnetic>
         <div class="test-imonials__user"
           style="--width-image-user: 93px; --url-user: url('assets/images/users/anh2.jpg'); --top: 115px; --left: 384px;">
         </div>
@@ -398,15 +480,15 @@
       <xo-grid style="--xs: 1; --sm: 2; --lg: 3; --xo-grid-col-gap: 30px;">
         <div class="collection-list__item" style="--bg-collection-item: url('assets/images/products/collection1.jpg')">
           <h3 class="collection-list__title">Super Protect</h3>
-          <a href="/test-FE/shop-all.html">Shop all</a>
+          <a href="/test-FE/shop-all.html"><button class="button-1">Shop all</button></a>
         </div>
         <div class="collection-list__item" style="--bg-collection-item: url('assets/images/products/collection2.jpg')">
           <h3 class="collection-list__title">Collaboration</h3>
-          <a href="/test-FE/shop-all.html">Shop all</a>
+          <a href="/test-FE/shop-all.html"><button class="button-1">Shop all</button></a>
         </div>
         <div class="collection-list__item" style="--bg-collection-item: url('assets/images/products/collection3.jpg')">
           <h3 class="collection-list__title">Slim Case</h3>
-          <a href="/test-FE/shop-all.html">Shop all</a>
+          <a href="/test-FE/shop-all.html"><button class="button-1">Shop all</button></a>
         </div>
       </xo-grid>
     </div>
@@ -420,29 +502,40 @@
           <p>This means that once you use different template designs for actual testimonial website widgets, you can
             make images from them and post</p>
           <div class="footer__content-socials">
-            <img src="assets/icons/socials/facebook.svg" alt="icon">
-            <img src="assets/icons/socials/pinterest.svg" alt="icon">
-            <img src="assets/icons/socials/tiktok.svg" alt="icon">
-            <img src="assets/icons/socials/insta.svg" alt="icon">
+            <xo-tooltip xo-title="facebook">
+              <img src="assets/icons/socials/facebook.svg" alt="icon">
+            </xo-tooltip>
+
+            <xo-tooltip xo-title="pinterest">
+              <img src="assets/icons/socials/pinterest.svg" alt="icon">
+            </xo-tooltip>
+
+            <xo-tooltip xo-title="tiktok">
+              <img src="assets/icons/socials/tiktok.svg" alt="icon">
+            </xo-tooltip>
+
+            <xo-tooltip xo-title="insta">
+              <img src="assets/icons/socials/insta.svg" alt="icon">
+            </xo-tooltip>
           </div>
         </div>
 
         <div class="footer__content-right">
           <div class="footer__content-menu">
             <h2>HOME</h2>
-            <a href="#">Shop</a>
-            <a href="#">Collection</a>
-            <a href="#">About us</a>
-            <a href="#">Blogs</a>
-            <a href="#">Contact</a>
+            <a href="#" class="underline">Shop</a>
+            <a href="#" class="underline">Collection</a>
+            <a href="#" class="underline">About us</a>
+            <a href="#" class="underline">Blogs</a>
+            <a href="#" class="underline">Contact</a>
           </div>
           <div class="footer__content-menu">
             <h2>COLLECTION</h2>
-            <a href="#">Sprring Summer</a>
-            <a href="#">Summer Nautica </a>
-            <a href="#">Ocean Ocean 2023</a>
-            <a href="#">Blogs</a>
-            <a href="#">Contact</a>
+            <a href="#" class="underline">Sprring Summer</a>
+            <a href="#" class="underline">Summer Nautica </a>
+            <a href="#" class="underline">Ocean Ocean 2023</a>
+            <a href="#" class="underline">Blogs</a>
+            <a href="#" class="underline">Contact</a>
           </div>
         </div>
       </div>
@@ -469,22 +562,24 @@
           </div>
           <img src="assets/icons/pay/google.svg" alt="icon">
           <img src="assets/icons/pay/amex.svg" alt="icon">
-          <div class="footer__pay-country">United States (USD$) <img src="assets/icons/arrowdownwhite.svg" alt="icon">
+          <xo-popover-trigger xo-name="top-left">
+            <div class="footer__currency-select">United States (USD$) <img src="assets/icons/arrowdownwhite.svg" alt="icon">
+          </xo-popover-trigger>
+          
+          <xo-popover xo-name="top-left" xo-placement="top-left" class="xo-currency-select__content">
+            <div class="xo-currency-select__item">Australia | USD $</div>
+            <div class="xo-currency-select__item">Austria | USD $</div>
+            <div class="xo-currency-select__item">Belgium | USD $</div>
+            <div class="xo-currency-select__item">Canada | USD $</div>
+            <div class="xo-currency-select__item">Czechia | USD $</div>
+          </xo-popover>
           </div>
         </div>
       </div>
   </footer>
 
-  <script>
-    window.addEventListener('DOMContentLoaded', () => {
-      const sidebarEl = document.querySelector('.sticky-sidebar-css');
-      xoSticky.subscribe(() => {
-        sidebarEl.style.top = `${xoSticky.getStickyHeight('top') + 10}px`;
-      })
-    })
-  </script>
-
   <script src="xo-webcomponents.js"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>
