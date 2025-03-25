@@ -1,196 +1,212 @@
 <!DOCTYPE html>
 <html lang="vi">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trang Chủ</title>
-    <!-- Swiper CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <!-- Your Custom CSS -->
-    <link rel="stylesheet" href="detail.css" />
-    <link rel="stylesheet" href="assets/css/component/card-product.css" />
-    <link rel="stylesheet" href="assets/css/component/header.css" />
-    <link rel="stylesheet" href="assets/css/component/footer.css" />
-    <link rel="stylesheet" href="assets/css/component/container.css" />
-    <link rel="stylesheet" href="assets/css/component/pagination.css" />
-    <link rel="stylesheet" href="assets/css/component/dropdown.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="assets/css/layout/grid.css" />
-    <link rel="stylesheet" href="xo-webcomponents.css" />
-  </head>
-  <body>
-    <header class="header">
-      <xo-sticky class="sticky-header">
-        <div class="header-content">
-          <img src="assets/icons/logo.svg" class="header__logo" />
-          <div class="header__menu">
-            <div class="header__menu-left">
-              <a href="#" class="header__menu-item">New & Featured</a>
-              <a href="#" class="header__menu-item">Collection</a>
-              <a href="#" class="header__menu-item">Customize</a>
-              <a href="#" class="header__menu-item">About us</a>
-              <a href="#" class="header__menu-item">Blog</a>
-            </div>
-    
-            <img src="assets/icons/menubar.svg" alt="menubar" class="header__menu-icon" />
-    
-            <div class="header__menu-right">
-              <a href="#">
-                <img src="assets/icons/search.svg" alt="search" />
-              </a>
-              <a href="#">
-                <img src="assets/icons/user.svg" alt="user" />
-              </a>
-              <a href="#" class="header__menu-cart">
-                <img src="assets/icons/cart.svg" alt="cart" />
-                <span>22</span>
-              </a>
-            </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trang Chủ</title>
+  <link rel="stylesheet" href="detail.css" />
+  <link rel="stylesheet" href="assets/css/component/card-product.css" />
+  <link rel="stylesheet" href="assets/css/component/header.css" />
+  <link rel="stylesheet" href="assets/css/component/footer.css" />
+  <link rel="stylesheet" href="assets/css/component/container.css" />
+  <link rel="stylesheet" href="assets/css/component/pagination.css" />
+  <link rel="stylesheet" href="assets/css/component/dropdown.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="assets/css/layout/grid.css" />
+  <link rel="stylesheet" href="xo-webcomponents.css" />
+</head>
+
+<body>
+  <header class="header">
+    <xo-sticky class="sticky-header">
+      <div class="header-content">
+        <img src="assets/icons/logoblack.svg" class="header__logo" />
+        <div class="header__menu">
+          <div class="header__menu-left">
+            <a href="#" class="header__menu-item">New & Featured</a>
+            <a href="#" class="header__menu-item">Collection</a>
+            <a href="#" class="header__menu-item">Customize</a>
+            <a href="#" class="header__menu-item">About us</a>
+            <a href="#" class="header__menu-item">Blog</a>
+          </div>
+
+          <img src="assets/icons/menubar.svg" alt="menubar" class="header__menu-icon" />
+
+          <div class="header__menu-right">
+            <a href="#">
+              <img src="assets/icons/search.svg" alt="search" />
+            </a>
+            <a href="#">
+              <img src="assets/icons/user.svg" alt="user" />
+            </a>
+            <a href="#" class="header__menu-cart">
+              <img src="assets/icons/cart.svg" alt="cart" />
+              <span>22</span>
+            </a>
           </div>
         </div>
-      </xo-sticky>
-    </header>
+      </div>
+    </xo-sticky>
+  </header>
 
-    <div class="line"></div>
+  <div class="line"></div>
 
-    <section class="page-section">
-      <div class="container-main" style="padding-top: 48px">
-        <div class="product-detail">
-          <div class="product-detail__slide">
-            <xo-carousel xo-active-index="0" xo-per-view="1" class="main-slider">
-              <xo-carousel-inner>
-                <xo-carousel-list>
-                  <xo-carousel-slide>
+  <section class="page-section">
+    <xo-container>
+      <div class="product-detail">
+        <div class="product-detail__slide">
+          <xo-carousel xo-active-index="0" xo-per-view="1" class="main-slider">
+            <xo-carousel-inner>
+              <xo-carousel-list>
+                <xo-carousel-slide>
+                  <xo-animate xo-cascade xo-type="fade-up">
                     <div class="slide__item">
                       <img src="assets/images/products/anh1.jpg" alt="Image 1" />
                     </div>
-                  </xo-carousel-slide>
-                  <xo-carousel-slide>
-                    <div class="slide__item">
-                      <img src="assets/images/products/anh2.jpg" alt="Image 1" />
-                    </div>
-                  </xo-carousel-slide>
-                  <xo-carousel-slide>
-                    <div class="slide__item">
-                      <img src="assets/images/products/anh3.jpg" alt="Image 1" />
-                    </div>
-                  </xo-carousel-slide>
-                  <xo-carousel-slide>
-                    <div class="slide__item">
-                      <img src="assets/images/products/anh4.jpg" alt="Image 1" />
-                    </div>
-                  </xo-carousel-slide>
-                  <xo-carousel-slide>
-                    <div class="slide__item">
-                      <img src="assets/images/products/anh5.jpg" alt="Image 1" />
-                    </div>
-                  </xo-carousel-slide>
-                </xo-carousel-list>
-              </xo-carousel-inner>
+                  </xo-animate>
+                </xo-carousel-slide>
+                <xo-carousel-slide>
+                  <div class="slide__item">
+                    <img src="assets/images/products/anh2.jpg" alt="Image 1" />
+                  </div>
+                </xo-carousel-slide>
+                <xo-carousel-slide>
+                  <div class="slide__item">
+                    <img src="assets/images/products/anh3.jpg" alt="Image 1" />
+                  </div>
+                </xo-carousel-slide>
+                <xo-carousel-slide>
+                  <div class="slide__item">
+                    <img src="assets/images/products/anh4.jpg" alt="Image 1" />
+                  </div>
+                </xo-carousel-slide>
+                <xo-carousel-slide>
+                  <div class="slide__item">
+                    <img src="assets/images/products/anh5.jpg" alt="Image 1" />
+                  </div>
+                </xo-carousel-slide>
+              </xo-carousel-list>
+            </xo-carousel-inner>
 
-              <xo-carousel-thumbnail style="margin-top: 20px;" xo-per-view="3" class="slider-thumbnail">
-                <xo-carousel-inner>
-                  <xo-carousel-list>
-                    <xo-carousel-slide>
+            <xo-carousel-thumbnail style="margin-top: 20px;" xo-per-view="4" class="slider-thumbnail">
+              <xo-carousel-inner>
+                <xo-carousel-list>
+                  <xo-carousel-slide>
+                    <xo-animate xo-cascade xo-type="fade-up">
                       <div class="slide__item">
                         <img src="assets/images/products/anh1.jpg" alt="Image 1" />
                       </div>
-                    </xo-carousel-slide>
-                    <xo-carousel-slide>
+                    </xo-animate>
+                  </xo-carousel-slide>
+                  <xo-carousel-slide>
+                    <xo-animate xo-cascade xo-type="fade-up">
                       <div class="slide__item">
                         <img src="assets/images/products/anh2.jpg" alt="Image 1" />
                       </div>
-                    </xo-carousel-slide>
-                    <xo-carousel-slide>
+                    </xo-animate>
+                  </xo-carousel-slide>
+                  <xo-carousel-slide>
+                    <xo-animate xo-cascade xo-type="fade-up">
                       <div class="slide__item">
                         <img src="assets/images/products/anh3.jpg" alt="Image 1" />
                       </div>
-                    </xo-carousel-slide>
-                    <xo-carousel-slide>
+                    </xo-animate>
+                  </xo-carousel-slide>
+                  <xo-carousel-slide>
+                    <xo-animate xo-cascade xo-type="fade-up">
                       <div class="slide__item">
                         <img src="assets/images/products/anh4.jpg" alt="Image 1" />
                       </div>
-                    </xo-carousel-slide>
-                    <xo-carousel-slide>
+                    </xo-animate>
+                  </xo-carousel-slide>
+                  <xo-carousel-slide>
+                    <xo-animate xo-cascade xo-type="fade-up">
                       <div class="slide__item">
                         <img src="assets/images/products/anh5.jpg" alt="Image 1" />
                       </div>
-                    </xo-carousel-slide>
-                  </xo-carousel-list>
-                </xo-carousel-inner>
-              </xo-carousel-thumbnail>
-            </xo-carousel>
-  
-          </div>
-  
-          <div class="product-detail__infor">
+                    </xo-animate>
+                  </xo-carousel-slide>
+                </xo-carousel-list>
+              </xo-carousel-inner>
+            </xo-carousel-thumbnail>
+          </xo-carousel>
+
+        </div>
+
+        <div class="product-detail__infor">
+          <xo-animate xo-cascade xo-type="fade-up">
             <div class="product-detail__sub">SOUNDBAR</div>
+          </xo-animate>
+          <xo-animate xo-cascade xo-type="fade-up">
             <h1 class="product-detail__title">
               Wavy Check Forest on Sky Matte Case
             </h1>
+          </xo-animate>
+          <xo-animate xo-cascade xo-type="fade-up">
             <p class="product-detail__des">
               The Tough Clear case has a slim profile with 12-foot drop
               protection. The one-piece platform design is constructed with
               cushioned...
             </p>
+          </xo-animate>
+          <xo-animate xo-cascade xo-type="fade-up">
             <div class="product-detail__price">$78 <span>$90</span></div>
+          </xo-animate>
+          <xo-animate xo-cascade xo-type="fade-up">
             <h3 class="product-detail__name">SELECT DEVIDE</h3>
+          </xo-animate>
+
+          <xo-animate xo-cascade xo-type="fade-up">
             <div class="prduct-detail__select-devide">
               <div class="dropdown">
-                <button class="dropdown__button">
-                  <span class="dropdown__text">Apple</span>
-                  <span class="dropdown__icon"
-                    ><img
-                      src="assets/icons/arrowdown.svg"
-                      alt="icon"
-                      style="rotate: -90deg"
-                  /></span>
-                </button>
-                <ul class="dropdown__menu">
-                  <li class="dropdown__item">Apple</li>
-                  <li class="dropdown__item">Samsung</li>
-                  <li class="dropdown__item">Google</li>
-                </ul>
+                <xo-popover-trigger xo-name="pop-1">
+                  <button class="dropdown__button">
+                    <span class="dropdown__text">Apple</span>
+                    <span class="dropdown__icon"><img src="assets/icons/arrowdown.svg" alt="icon"
+                        style="rotate: -90deg" /></span>
+                  </button>
+                </xo-popover-trigger>
+
+                <xo-popover xo-name="pop-1" xo-placement="bottom-left" class="dropdown__menu">
+                  <div class="dropdown__item">Apple</div>
+                  <div class="dropdown__item">Samsung</div>
+                  <div class="dropdown__item">Google</div>
+                </xo-popover>
               </div>
+
               <div class="dropdown">
-                <button class="dropdown__button">
-                  <span class="dropdown__text">Apple</span>
-                  <span class="dropdown__icon"
-                    ><img
-                      src="assets/icons/arrowdown.svg"
-                      alt="icon"
-                      style="rotate: -90deg"
-                  /></span>
-                </button>
-                <ul class="dropdown__menu">
-                  <li class="dropdown__item">Apple</li>
-                  <li class="dropdown__item">Samsung</li>
-                  <li class="dropdown__item">Google</li>
-                </ul>
+                <xo-popover-trigger xo-name="pop-2">
+                  <button class="dropdown__button">
+                    <span class="dropdown__text">Apple</span>
+                    <span class="dropdown__icon"><img src="assets/icons/arrowdown.svg" alt="icon"
+                        style="rotate: -90deg" /></span>
+                  </button>
+                </xo-popover-trigger>
+
+                <xo-popover xo-name="pop-2" xo-placement="bottom-left" class="dropdown__menu">
+                  <div class="dropdown__item">Apple</div>
+                  <div class="dropdown__item">Samsung</div>
+                  <div class="dropdown__item">Google</div>
+                </xo-popover>
               </div>
             </div>
+          </xo-animate>
+
+          <xo-animate xo-cascade xo-type="fade-up">
             <h3 class="product-detail__name">SELECT COLOR</h4>
-            <div
-              class="list-color"
-              style="justify-content: start; margin-top: 9px; gap: 6px; display: flex !important;"
-            >
-              <div
-                class="list-color__item list-color__item--select"
-                style="--color-item: #0f61ff; --item-width: 19px"
-              ></div>
-              <div
-                class="list-color__item"
-                style="--color-item: #c1c1c1; --item-width: 19px"
-              ></div>
-              <div
-                class="list-color__item"
-                style="--color-item: #d9b99b; --item-width: 19px"
-              ></div>
+          </xo-animate>
+
+          <xo-animate xo-cascade xo-type="fade-up">
+            <div class="list-color" style="margin: 0px; margin-top: 9px; gap: 6px;">
+              <div class="list-color__item list-color__item--select" style="--color-item: #0f61ff; --item-width: 19px">
+              </div>
+              <div class="list-color__item" style="--color-item: #c1c1c1; --item-width: 19px"></div>
+              <div class="list-color__item" style="--color-item: #d9b99b; --item-width: 19px"></div>
             </div>
-  
+          </xo-animate>
+
+          <xo-animate xo-cascade xo-type="fade-up">
             <div class="input-number">
               <button class="input-number__btn input-number__btn--minus">
                 −
@@ -198,18 +214,23 @@
               <input type="text" class="input-number__value" value="01" min="0" />
               <button class="input-number__btn input-number__btn--plus">+</button>
             </div>
-  
+          </xo-animate>
+
+          <xo-animate xo-cascade xo-type="fade-up">
             <div class="product-detail__button">
-              <button class="product-detail__buy">BUY NOW</button>
+              <button class="product-detail__buy button-1">BUY NOW</button>
               <button class="product-detail__add">ADD TO CART</button>
             </div>
+          </xo-animate>
 
+          <xo-animate xo-cascade xo-type="fade-up">
             <xo-collapse-provider xo-duration="300" class="accordion">
               <xo-collapse-trigger xo-active>
                 <button class="accordion__header">
                   Main features
                   <span class="icon">
-                    <img src="./assets/icons/minus.svg" alt="icon" />
+                    <img src="./assets/icons/plus.svg" alt="icon" class="icon__plus" />
+                    <img src="./assets/icons/minus.svg" alt="icon" class="icon__minus" />
                   </span>
                 </button>
               </xo-collapse-trigger>
@@ -238,13 +259,13 @@
                   </ul>
                 </div>
               </xo-collapse>
-    
+
               <xo-collapse-trigger>
                 <button class="accordion__header">
                   Materials
                   <span class="icon">
-                    <img src="./assets/icons/plus.svg" alt="icon" />
-                  </span>
+                    <img src="./assets/icons/plus.svg" alt="icon" class="icon__plus" />
+                    <img src="./assets/icons/minus.svg" alt="icon" class="icon__minus" /> </span>
                 </button>
               </xo-collapse-trigger>
               <xo-collapse>
@@ -255,13 +276,13 @@
                   </p>
                 </div>
               </xo-collapse>
-    
+
               <xo-collapse-trigger>
                 <button class="accordion__header">
                   Shipping & returns
                   <span class="icon">
-                    <img src="./assets/icons/plus.svg" alt="icon" />
-                  </span>
+                    <img src="./assets/icons/plus.svg" alt="icon" class="icon__plus" />
+                    <img src="./assets/icons/minus.svg" alt="icon" class="icon__minus" /> </span>
                 </button>
               </xo-collapse-trigger>
               <xo-collapse>
@@ -274,8 +295,8 @@
                 <button class="accordion__header">
                   Shipping & returns
                   <span class="icon">
-                    <img src="./assets/icons/plus.svg" alt="icon" />
-                  </span>
+                    <img src="./assets/icons/plus.svg" alt="icon" class="icon__plus" />
+                    <img src="./assets/icons/minus.svg" alt="icon" class="icon__minus" /> </span>
                 </button>
               </xo-collapse-trigger>
               <xo-collapse>
@@ -284,256 +305,330 @@
                 </div>
               </xo-collapse>
             </xo-collapse-provider>
-          </div>
+          </xo-animate>
         </div>
       </div>
-    </section>
+    </xo-container>
+  </section>
 
-    <section class="page-section" style="--bg: #f6f6f6">
-      <div class="introduce-cases">
-        <div class="container-main">
-          <h3 class="introduce-cases__title">Extreme Cases MagSafe Compatible</h3>
-          <xo-grid style="--xs: 1; --md: 3; --xo-grid-col-gap: 30px" class="introduce-cases__list">
-            <xo-animate xo-cascade xo-type="fade-up">
-              <div class="introduce-cases__item">
-                <span>01</span>
-                <img src="assets/images/products/cases1.jpg" alt="case1" />
-                <p>Essentials by CASETiFY™ The Beauty of Simplicity</p>
-              </div>
-            </xo-animate>
+  <section class="page-section" style="--bg: #f6f6f6">
+    <div class="introduce-cases">
+      <xo-container>
+        <xo-animate xo-type="fade-down">
+          <h2 class="introduce-cases__title">Extreme Cases MagSafe Compatible</h2>
+        </xo-animate>
+        <xo-grid style="--xs: 1; --md: 3; --xo-grid-col-gap: 30px" class="introduce-cases__list">
+          <xo-animate xo-cascade xo-type="fade-up">
+            <div class="introduce-cases__item">
+              <span>01</span>
+              <img src="assets/images/products/cases1.jpg" alt="case1" />
+              <p>Essentials by CASETiFY™ <br />The Beauty of Simplicity</p>
+            </div>
+          </xo-animate>
 
-              <div class="introduce-cases__item introduce-cases__item--second">
-                <span>02</span>
-                <p>Defy Gravity With The New Bounce Case</p>
-              </div>
+          <xo-animate xo-cascade xo-type="fade-up">
+            <div class="introduce-cases__item">
+              <span>02</span>
+              <img src="assets/images/products/cases1.jpg" alt="case1" />
+              <p>Defy Gravity With The <br />New Bounce Case</p>
+            </div>
+          </xo-animate>
 
-            <xo-animate xo-cascade xo-type="fade-up">
-              <div class="introduce-cases__item introduce-cases__item--third">
-                <span>03</span>
-                <img src="assets/images/products/cases3.jpg" alt="case1" />
-                <p>Spice up your mirror selfies with a little Y2K</p>
-              </div>
-            </xo-animate>
-            </xo-grid>
+          <xo-animate xo-cascade xo-type="fade-up">
+            <div class="introduce-cases__item introduce-cases__item--third">
+              <span>03</span>
+              <img src="assets/images/products/cases3.jpg" alt="case1" />
+              <p>Spice up your mirror<br /> selfies with a little Y2K</p>
+            </div>
+          </xo-animate>
+        </xo-grid>
 
-            <xo-carousel
-            xo-per-view="1"
-            xo-render-bullet="<span class='carousel-bullet'></span>"
-            class="introduce-cases__slide"
-          >
-            <xo-carousel-inner>
-              <xo-carousel-list>
-                <xo-carousel-slide><div class="carousel-item">
-                  <xo-animate xo-cascade xo-type="fade-up">
-                    <div class="introduce-cases__item">
-                      <span>01</span>
-                      <img src="assets/images/products/cases1.jpg" alt="case1" />
-                      <p>Essentials by CASETiFY™ The Beauty of Simplicity</p>
-                    </div>
-                  </xo-animate>
-                </div></xo-carousel-slide>
-                <xo-carousel-slide>
-                  <div class="introduce-cases__item introduce-cases__item--second">
+        <xo-carousel xo-per-view="1" xo-render-bullet="<span class='carousel-bullet'></span>"
+          class="introduce-cases__slide">
+          <xo-carousel-inner>
+            <xo-carousel-list>
+              <xo-carousel-slide>
+                <xo-animate xo-cascade xo-type="fade-up">
+                  <div class="introduce-cases__item">
+                    <span>01</span>
+                    <img src="assets/images/products/cases1.jpg" alt="case1" />
+                    <p>Essentials by CASETiFY™ The Beauty of Simplicity</p>
+                  </div>
+                </xo-animate>
+              </xo-carousel-slide>
+              <xo-carousel-slide>
+                <xo-animate xo-cascade xo-type="fade-up">
+                  <div class="introduce-cases__item">
                     <span>02</span>
+                    <img src="assets/images/products/cases1.jpg" alt="case1" />
                     <p>Defy Gravity With The New Bounce Case</p>
                   </div>
-                </xo-carousel-slide>
-                <xo-carousel-slide>
-                  <xo-animate xo-cascade xo-type="fade-up">
-                    <div class="introduce-cases__item introduce-cases__item--third">
-                      <span>03</span>
-                      <img src="assets/images/products/cases3.jpg" alt="case1" />
-                      <p>Spice up your mirror selfies with a little Y2K</p>
-                    </div>
-                  </xo-animate>
-                </xo-carousel-slide>
-              </xo-carousel-list>
-            </xo-carousel-inner>
+                </xo-animate>
+              </xo-carousel-slide>
+              <xo-carousel-slide>
+                <xo-animate xo-cascade xo-type="fade-up">
+                  <div class="introduce-cases__item introduce-cases__item--third">
+                    <span>03</span>
+                    <img src="assets/images/products/cases3.jpg" alt="case1" />
+                    <p>Spice up your mirror selfies with a little Y2K</p>
+                  </div>
+                </xo-animate>
+              </xo-carousel-slide>
+            </xo-carousel-list>
+          </xo-carousel-inner>
+          <xo-carousel-pagination></xo-carousel-pagination>
+        </xo-carousel>
+      </xo-container>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <xo-parallax xo-lerp-ease="0.1" class="bg-parallax__item">
+      <xo-parallax-scroll xo-keyframes="{
+                '0%': { backgroundPositionY: '200px' },
+                '100%': { backgroundPositionY: '-200px' },
+              }" class="bg-parallax__url"
+        style="background-image: url('./assets/images/banner-detail.jpg'); width: 100vw;">
+
+        <div class="specification">
+          <xo-container>
+            <h2 class="specification__title">
+              Introducing the Plasma XTE Case, blend of cutting-edge design and
+              unwavering protection
+            </h2>
+
+            <div class="specification__content">
+              <div class="specification__left">
+                <div>
+                  <p>IP Protech Up To</p>
+                  <h3>IP68</h3>
+                </div>
+                <div>
+                  <p>Drop Protechtion</p>
+                  <h3>Air Tech</h3>
+                </div>
+              </div>
+              <div class="specification__center">
+                <div class="specification__item">
+                  <span class="specification__item-attr">Height</span>
+                  <div class="specification__item-value">9.5 in (241 mm)</div>
+                </div>
+                <div class="specification__item" style="border-top: 1px solid #e5e5e5">
+                  <span class="specification__item-attr">Width</span>
+                  <span class="specification__item-value">6.5 in (160 mm)</span>
+                </div>
+                <div class="specification__item" style="border-top: 1px solid #e5e5e5">
+                  <span class="specification__item-attr">Depth</span>
+                  <span class="specification__item-value">0.5 in (241 mm)</span>
+                </div>
+                <div class="specification__item" style="border-top: 1px solid #e5e5e5">
+                  <span class="specification__item-attr">Weight</span>
+                  <span class="specification__item-value" style="margin-right: 10px">0.008 kg</span>
+                </div>
+              </div>
+
+              <div class="specification__right"></div>
+            </div>
+          </xo-container>
+        </div>
+      </xo-parallax-scroll>
+    </xo-parallax>
+  </section>
+
+  <section class="page-section" style="--bg: #F6F6F6">
+    <xo-container class="customization">
+      <span class="customization__name">
+        <xo-animate xo-cascade xo-type="fade-up">
+          CUSTOM PRODUCT
+        </xo-animate>
+      </span>
+      <h2 class="customization__title">
+        <xo-animate xo-cascade xo-type="fade-up">
+          Custom design your phone case
+        </xo-animate>
+      </h2>
+      <div class="customization__carousel">
+        <xo-carousel xo-per-view="1" xo-render-bullet="<div class='carousel-bullet'></div>">
+          <xo-carousel-inner>
+            <xo-carousel-list>
+              <xo-carousel-slide>
+                <xo-animate xo-cascade xo-type="fade-up">
+                  <img src="assets/images/products/anh1.jpg" alt="" class="customization__product" />
+                </xo-animate>
+              </xo-carousel-slide>
+              <xo-carousel-slide>
+                <xo-animate xo-cascade xo-type="fade-up">
+                  <img src="assets/images/products/anh2.jpg" alt="" class="customization__product" />
+                </xo-animate>
+              </xo-carousel-slide>
+              <xo-carousel-slide>
+                <xo-animate xo-cascade xo-type="fade-up">
+                  <img src="assets/images/products/anh3.jpg" alt="" class="customization__product" />
+                </xo-animate>
+              </xo-carousel-slide>
+              <xo-carousel-slide>
+                <xo-animate xo-cascade xo-type="fade-up">
+                  <img src="assets/images/products/anh4.jpg" alt="" class="customization__product" />
+                </xo-animate>
+              </xo-carousel-slide>
+              <xo-carousel-slide>
+                <xo-animate xo-cascade xo-type="fade-up">
+                  <img src="assets/images/products/anh5.jpg" alt="" class="customization__product" />
+                </xo-animate>
+              </xo-carousel-slide>
+            </xo-carousel-list>
+          </xo-carousel-inner>
+
+          <div class="customization__navigate">
             <xo-carousel-pagination></xo-carousel-pagination>
-          </xo-carousel>
-        </div>
-      </div>
-    </section>
+            <div class="customization__material">
+              <xo-carousel-prev><img src="assets/icons/arrowdown.svg" alt="icon" /></xo-carousel-prev>
+              <xo-carousel-inner>
+                <xo-carousel-list>
+                  <xo-carousel-slide><span class="carousel-item">MATERIAL</span></xo-carousel-slide>
+                  <xo-carousel-slide><span class="carousel-item">MATERIAL 2</span></xo-carousel-slide>
+                  <xo-carousel-slide><span class="carousel-item">MATERIAL 3</span></xo-carousel-slide>
+                  <xo-carousel-slide><span class="carousel-item">MATERIAL 4</span></xo-carousel-slide>
+                  <xo-carousel-slide><span class="carousel-item">MATERIAL 5</span></xo-carousel-slide>
+                </xo-carousel-list>
+              </xo-carousel-inner>
+              <xo-carousel-next><img src="assets/icons/arrowdown.svg" alt="icon"
+                  style="rotate: 180deg" /></xo-carousel-next>
+            </div>
 
-    <section class="page-section" style="--bg: url('../../images/banner-detail.jpg');">
-      <div class="specification">
-        <div class="container-main">
-          <h2 class="specification__title">
-            Introducing the Plasma XTE Case, blend of cutting-edge design and
-            unwavering protection
-          </h2>
-  
-          <div class="specification__content">
-            <div class="specification__left">
-              <div>
-                <p>IP Protech Up To</p>
-                <h3>IP68</h3>
-              </div>
-              <div>
-                <p>Drop Protechtion</p>
-                <h3>Air Tech</h3>
-              </div>
+            <div class="customization__list">
+              <xo-carousel-thumbnail xo-per-view="5" xo-render-bullet="<div class='carousel-bullet'></div>">
+                <xo-carousel-inner>
+                  <xo-carousel-list>
+                    <xo-carousel-slide>
+                      <xo-animate xo-cascade xo-type="fade-up">
+                        <div class="customization__item">
+                          <div class="customization__img"></div>
+                        </div>
+                      </xo-animate>
+                    </xo-carousel-slide>
+                    <xo-carousel-slide>
+                      <xo-animate xo-cascade xo-type="fade-up">
+                        <div class="customization__item">
+                          <div class="customization__img"></div>
+                        </div>
+                      </xo-animate>
+                    </xo-carousel-slide>
+                    <xo-carousel-slide>
+                      <xo-animate xo-cascade xo-type="fade-up">
+                        <div class="customization__item">
+                          <div class="customization__img"></div>
+                        </div>
+                      </xo-animate>
+                    </xo-carousel-slide>
+                    <xo-carousel-slide>
+                      <xo-animate xo-cascade xo-type="fade-up">
+                        <div class="customization__item">
+                          <div class="customization__img"></div>
+                        </div>
+                      </xo-animate>
+                    </xo-carousel-slide>
+                    <xo-carousel-slide>
+                      <xo-animate xo-cascade xo-type="fade-up">
+                        <div class="customization__item">
+                          <div class="customization__img"></div>
+                        </div>
+                      </xo-animate>
+                    </xo-carousel-slide>
+                  </xo-carousel-list>
+                </xo-carousel-inner>
+              </xo-carousel-thumbnail>
             </div>
-            <div class="specification__center">
-              <div class="specification__item">
-                <span class="specification__item-attr">Height</span>
-                <div class="specification__item-value">9.5 in (241 mm)</div>
-              </div>
-              <div
-                class="specification__item"
-                style="border-top: 1px solid #e5e5e5"
-              >
-                <span class="specification__item-attr">Width</span>
-                <span class="specification__item-value">6.5 in (160 mm)</span>
-              </div>
-              <div
-                class="specification__item"
-                style="border-top: 1px solid #e5e5e5"
-              >
-                <span class="specification__item-attr">Depth</span>
-                <span class="specification__item-value">0.5 in (241 mm)</span>
-              </div>
-              <div
-                class="specification__item"
-                style="border-top: 1px solid #e5e5e5"
-              >
-                <span class="specification__item-attr">Weight</span>
-                <span class="specification__item-value" style="margin-right: 10px"
-                  >0.008 kg</span
-                >
-              </div>
-            </div>
-  
-            <div class="specification__right"></div>
           </div>
-        </div>
+        </xo-carousel>
       </div>
-    </section>
+    </xo-container>
+  </section>
 
-    <section class="page-section" style="--bg: #F6F6F6">
-      <div class="customization container-main">
-        <span class="customization__name">CUSTOM PRODUCT</span>
-        <h2 class="customization__title">Custom design your phone case</h2>
-        <img
-          src="assets/images/products/anh1.jpg"
-          alt=""
-          class="customization__product"
-        />
-        <div class="customization__navigate">
-          <div class="customization__tabs">
-            <div class="customization__tab customization__tab--active"></div>
-            <div class="customization__tab customization__tab--active"></div>
-            <div class="customization__tab customization__tab--active"></div>
-            <div class="customization__tab"></div>
-            <div class="customization__tab"></div>
-            <div class="customization__tab"></div>
-          </div>
+  <section class="page-section">
+    <xo-container>
+      <div class="faq">
+        <h2 class="faq__title">
+          <xo-animate xo-cascade xo-type="fade-up">
+            Frequently Asked Questions
+          </xo-animate>
+        </h2>
   
-          <div class="customization__material">
-            <img src="assets/icons/arrowdown.svg" alt="icon" />
-            <span class="customization__title">MATERIAL</span>
-            <img
-              src="assets/icons/arrowdown.svg"
-              alt="icon"
-              style="rotate: 180deg"
-            />
-          </div>
-  
-          <div class="customization__list">
-            <div class="customization__item">
-              <div class="customization__img customization__img--active"></div>
-              <span>Sillicon</span>
-            </div>
-            <div class="customization__item">
-              <div class="customization__img"></div>
-            </div>
-            <div class="customization__item">
-              <div class="customization__img"></div>
-            </div>
-            <div class="customization__item">
-              <div class="customization__img"></div>
-            </div>
-            <div class="customization__item">
-              <div class="customization__img"></div>
-            </div>
-            <div class="customization__item">
-              <div class="customization__img"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="page-section">
-      <div class="faq container-main">
-        <h2 class="faq__title">Frequently Asked Questions</h2>
-        
         <xo-collapse-provider xo-duration="300" class="accordion2">
-          <div class="accordion2__item">
-            <xo-collapse-trigger xo-active>
-              <button class="accordion2__header">
-                Is Wolfwood furniture environmentally friendly?
-                <span class="icon">
-                  <img src="./assets/icons/minus.svg" alt="icon" />
-                </span>
-              </button>
-            </xo-collapse-trigger>
-            <xo-collapse xo-active>
-              <div class="accordion2__content">
-                We are committed to sustainability and use certified wood in our furniture. We strive to minimize our environmental impact and create pieces that reflect our respect for the natural world.
-              </div>
-            </xo-collapse>
-          </div>
-
-          <div class="accordion2__item">
-            <xo-collapse-trigger>
-              <button class="accordion2__header">
-                Do you ship internationally?
-                <span class="icon">
-                  <img src="./assets/icons/plus.svg" alt="icon" />
-                </span>
-              </button>
-            </xo-collapse-trigger>
-            <xo-collapse>
-              <div class="accordion2__content">
-                High-quality polycarbonate and TPU blend for superior protection.
-              </div>
-            </xo-collapse>
-          </div>
-
-          <div class="accordion2__item">
-            <xo-collapse-trigger>
-              <button class="accordion2__header">
-                What is the Wolfwood philosophy?
-                <span class="icon">
-                  <img src="./assets/icons/plus.svg" alt="icon" />
-                </span>
-              </button>
-            </xo-collapse-trigger>
-            <xo-collapse>
-              <div class="accordion2__content">
-                <p>Free shipping for orders over $50. 30-day return policy.</p>
-              </div>
-            </xo-collapse>
-          </div>
-
-          <div class="accordion2__item">
-            <xo-collapse-trigger>
-              <button class="accordion2__header">
-                What is your return policy?
-                <span class="icon">
-                  <img src="./assets/icons/plus.svg" alt="icon" />
-                </span>
-              </button>
-            </xo-collapse-trigger>
-            <xo-collapse>
-              <div class="accordion2__content">
-                <p>Free shipping for orders over $50. 30-day return policy.</p>
-              </div>
-            </xo-collapse>
-          </div>
+          <xo-animate xo-cascade xo-type="fade-up">
+            <div class="accordion2__item">
+              <xo-collapse-trigger xo-active>
+                <button class="accordion2__header">
+                  Is Wolfwood furniture environmentally friendly?
+                  <span class="icon">
+                    <img src="./assets/icons/plus.svg" alt="icon" class="icon__plus" />
+                    <img src="./assets/icons/minus.svg" alt="icon" class="icon__minus" /> </span>
+                </button>
+              </xo-collapse-trigger>
+              <xo-collapse xo-active>
+                <div class="accordion2__content">
+                  We are committed to sustainability and use certified wood in our furniture. We strive to minimize our
+                  environmental impact and create pieces that reflect our respect for the natural world.
+                </div>
+              </xo-collapse>
+            </div>
+          </xo-animate>
+  
+          <xo-animate xo-cascade xo-type="fade-up">
+            <div class="accordion2__item">
+              <xo-collapse-trigger>
+                <button class="accordion2__header">
+                  Do you ship internationally?
+                  <span class="icon">
+                    <img src="./assets/icons/plus.svg" alt="icon" class="icon__plus" />
+                    <img src="./assets/icons/minus.svg" alt="icon" class="icon__minus" /> </span>
+                </button>
+              </xo-collapse-trigger>
+              <xo-collapse>
+                <div class="accordion2__content">
+                  High-quality polycarbonate and TPU blend for superior protection.
+                </div>
+              </xo-collapse>
+            </div>
+          </xo-animate>
+  
+          <xo-animate xo-cascade xo-type="fade-up">
+            <div class="accordion2__item">
+              <xo-collapse-trigger>
+                <button class="accordion2__header">
+                  What is the Wolfwood philosophy?
+                  <span class="icon">
+                    <img src="./assets/icons/plus.svg" alt="icon" class="icon__plus" />
+                    <img src="./assets/icons/minus.svg" alt="icon" class="icon__minus" /> </span>
+                </button>
+              </xo-collapse-trigger>
+              <xo-collapse>
+                <div class="accordion2__content">
+                  <p>Free shipping for orders over $50. 30-day return policy.</p>
+                </div>
+              </xo-collapse>
+            </div>
+          </xo-animate>
+  
+          <xo-animate xo-cascade xo-type="fade-up">
+            <div class="accordion2__item">
+              <xo-collapse-trigger>
+                <button class="accordion2__header">
+                  What is your return policy?
+                  <span class="icon">
+                    <img src="./assets/icons/plus.svg" alt="icon" class="icon__plus" />
+                    <img src="./assets/icons/minus.svg" alt="icon" class="icon__minus" /> </span>
+                </button>
+              </xo-collapse-trigger>
+              <xo-collapse>
+                <div class="accordion2__content">
+                  <p>Free shipping for orders over $50. 30-day return policy.</p>
+                </div>
+              </xo-collapse>
+            </div>
+          </xo-animate>
         </xo-collapse-provider>
-
+  
         <div class="download">
           <div class="download__item">
             <div class="download__name">Product sheet <img src="./assets/icons/download.svg" alt=""></div>
@@ -549,332 +644,323 @@
           </div>
         </div>
       </div>
-    </section>
+    </xo-container>
+  </section>
 
-    <section class="page-section">
-      <div class="feature-collection container-main">
+  <section class="page-section">
+    <xo-container>
+      <div class="feature-collection">
         <div class="feature-collection__header">
           <h2>You may also like</h2>
           <a href="/test-FE/shop-all.html">Shop all</a>
         </div>
-
-        <xo-carousel
-        xo-per-view="1"
-        xo-render-bullet="<span class='carousel-bullet'></span>"
-      >
-        <xo-carousel-inner>
-          <xo-carousel-list>
-            <xo-carousel-slide>
-              <xo-animate xo-cascade xo-type="fade-up">
+  
+        <xo-carousel xo-per-view="1" xo-render-bullet="<span class='carousel-bullet'></span>">
+          <xo-carousel-inner>
+            <xo-carousel-list>
+              <xo-carousel-slide>
                 <xo-grid style="--xs: 2; --lg:4; --xo-grid-col-gap: 15px; --xo-grid-row-gap: 15px">
                   <xo-animate xo-cascade xo-type="fade-up">
-                    <a href="/test-FE/detail.html">
-                      <div class="card-product">
-                        <img src="assets/images/products/anh1.jpg" alt="anh1" />
+                    <div class="card-product">
+                      <a href="/test-FE/detail.html">
+                        <div class="card-img">
+                          <div class="card-img__first">
+                            <img src="assets/images/products/anh1.jpg" alt="anh1" />
+                          </div>
+                          <div class="card-img__second">
+                            <img src="assets/images/products/anh5.jpg" alt="anh1" />
+                          </div>
+                        </div>
                         <h3 class="card-product__name">Hills</h3>
                         <span class="card-product__price">$76</span>
-                        <div class="list-color">
-                          <div
-                            class="list-color__item list-color__item--select" style="--color-item: #c9bfae"
-                          ></div>
-                          <div class="list-color__item" style="--color-item: #a393b5"></div>
-                          <div class="list-color__item" style="--color-item: #ec978c"></div>
-                          <div class="list-color__item" style="--color-item: #ec978c"></div>
-                        </div>
+                      </a>
+                      <div class="list-color">
+                        <div class="list-color__item list-color__item--select" style="--color-item: #c9bfae"></div>
+                        <div class="list-color__item" style="--color-item: #a393b5"></div>
+                        <div class="list-color__item" style="--color-item: #ec978c"></div>
+                        <div class="list-color__item" style="--color-item: #ec978c"></div>
                       </div>
-                    </a>
+                    </div>
                   </xo-animate>
-      
+  
                   <xo-animate xo-cascade xo-type="fade-up">
-                    <a href="/test-FE/detail.html">
-                      <div class="card-product">
-                        <img src="assets/images/products/anh2.jpg" alt="anh1" />
+                    <div class="card-product">
+                      <a href="/test-FE/detail.html">
+                        <div class="card-img">
+                          <div class="card-img__first">
+                            <img src="assets/images/products/anh2.jpg" alt="anh1" />
+                          </div>
+                          <div class="card-img__second">
+                            <img src="assets/images/products/anh5.jpg" alt="anh1" />
+                          </div>
+                        </div>
                         <h3 class="card-product__name">Hills</h3>
                         <span class="card-product__price">$76</span>
-                        <div class="list-color">
-                          <div
-                            class="list-color__item list-color__item--select" style="--color-item: #c9bfae"
-                          ></div>
-                          <div class="list-color__item" style="--color-item: #a393b5"></div>
-                          <div class="list-color__item" style="--color-item: #ec978c"></div>
-                          <div class="list-color__item" style="--color-item: #ec978c"></div>
-                        </div>
+                      </a>
+                      <div class="list-color">
+                        <div class="list-color__item list-color__item--select" style="--color-item: #c9bfae"></div>
+                        <div class="list-color__item" style="--color-item: #a393b5"></div>
+                        <div class="list-color__item" style="--color-item: #ec978c"></div>
+                        <div class="list-color__item" style="--color-item: #ec978c"></div>
                       </div>
-                    </a>
+                    </div>
                   </xo-animate>
-      
+  
                   <xo-animate xo-cascade xo-type="fade-up">
-                    <a href="/test-FE/detail.html">
-                      <div class="card-product">
-                        <img src="assets/images/products/anh3.jpg" alt="anh1" />
+                    <div class="card-product">
+                      <a href="/test-FE/detail.html">
+                        <div class="card-img">
+                          <div class="card-img__first">
+                            <img src="assets/images/products/anh3.jpg" alt="anh1" />
+                          </div>
+                          <div class="card-img__second">
+                            <img src="assets/images/products/anh5.jpg" alt="anh1" />
+                          </div>
+                        </div>
                         <h3 class="card-product__name">Hills</h3>
                         <span class="card-product__price">$76</span>
-                        <div class="list-color">
-                          <div
-                            class="list-color__item list-color__item--select" style="--color-item: #c9bfae"
-                          ></div>
-                          <div class="list-color__item" style="--color-item: #a393b5"></div>
-                          <div class="list-color__item" style="--color-item: #ec978c"></div>
-                          <div class="list-color__item" style="--color-item: #ec978c"></div>
-                        </div>
+                      </a>
+                      <div class="list-color">
+                        <div class="list-color__item list-color__item--select" style="--color-item: #c9bfae"></div>
+                        <div class="list-color__item" style="--color-item: #a393b5"></div>
+                        <div class="list-color__item" style="--color-item: #ec978c"></div>
+                        <div class="list-color__item" style="--color-item: #ec978c"></div>
                       </div>
-                    </a>
+                    </div>
                   </xo-animate>
-      
+  
                   <xo-animate xo-cascade xo-type="fade-up">
-                    <a href="/test-FE/detail.html">
-                      <div class="card-product">
-                        <img src="assets/images/products/anh4.jpg" alt="anh1" />
+                    <div class="card-product">
+                      <a href="/test-FE/detail.html">
+                        <div class="card-img">
+                          <div class="card-img__first">
+                            <img src="assets/images/products/anh4.jpg" alt="anh1" />
+                          </div>
+                          <div class="card-img__second">
+                            <img src="assets/images/products/anh5.jpg" alt="anh1" />
+                          </div>
+                        </div>
                         <h3 class="card-product__name">Hills</h3>
                         <span class="card-product__price">$76</span>
-                        <div class="list-color">
-                          <div
-                            class="list-color__item list-color__item--select" style="--color-item: #c9bfae"
-                          ></div>
-                          <div class="list-color__item" style="--color-item: #a393b5"></div>
-                          <div class="list-color__item" style="--color-item: #ec978c"></div>
-                          <div class="list-color__item" style="--color-item: #ec978c"></div>
-                        </div>
+                      </a>
+                      <div class="list-color">
+                        <div class="list-color__item list-color__item--select" style="--color-item: #c9bfae"></div>
+                        <div class="list-color__item" style="--color-item: #a393b5"></div>
+                        <div class="list-color__item" style="--color-item: #ec978c"></div>
+                        <div class="list-color__item" style="--color-item: #ec978c"></div>
                       </div>
-                    </a>
+                    </div>
                   </xo-animate>
                 </xo-grid>
-              </xo-animate>
-            </xo-carousel-slide>
-            <xo-carousel-slide>
-              <xo-grid style="--xs: 2; --lg: 4; --xo-grid-col-gap: 15px; --xo-grid-row-gap: 15px">
-                <xo-animate xo-cascade xo-type="fade-up">
-                  <a href="/test-FE/detail.html">
-                    <div class="card-product">
-                      <img src="assets/images/products/anh1.jpg" alt="anh1" />
-                      <h3 class="card-product__name">Hills</h3>
-                      <span class="card-product__price">$76</span>
-                      <div class="list-color">
-                        <div
-                          class="list-color__item list-color__item--select" style="--color-item: #c9bfae"
-                        ></div>
-                        <div class="list-color__item" style="--color-item: #a393b5"></div>
-                        <div class="list-color__item" style="--color-item: #ec978c"></div>
-                        <div class="list-color__item" style="--color-item: #ec978c"></div>
-                      </div>
-                    </div>
-                  </a>
-                </xo-animate>
-    
-                <xo-animate xo-cascade xo-type="fade-up">
-                  <a href="/test-FE/detail.html">
-                    <div class="card-product">
-                      <img src="assets/images/products/anh2.jpg" alt="anh1" />
-                      <h3 class="card-product__name">Hills</h3>
-                      <span class="card-product__price">$76</span>
-                      <div class="list-color">
-                        <div
-                          class="list-color__item list-color__item--select" style="--color-item: #c9bfae"
-                        ></div>
-                        <div class="list-color__item" style="--color-item: #a393b5"></div>
-                        <div class="list-color__item" style="--color-item: #ec978c"></div>
-                        <div class="list-color__item" style="--color-item: #ec978c"></div>
-                      </div>
-                    </div>
-                  </a>
-                </xo-animate>
-    
-                <xo-animate xo-cascade xo-type="fade-up">
-                  <a href="/test-FE/detail.html">
-                    <div class="card-product">
-                      <img src="assets/images/products/anh3.jpg" alt="anh1" />
-                      <h3 class="card-product__name">Hills</h3>
-                      <span class="card-product__price">$76</span>
-                      <div class="list-color">
-                        <div
-                          class="list-color__item list-color__item--select" style="--color-item: #c9bfae"
-                        ></div>
-                        <div class="list-color__item" style="--color-item: #a393b5"></div>
-                        <div class="list-color__item" style="--color-item: #ec978c"></div>
-                        <div class="list-color__item" style="--color-item: #ec978c"></div>
-                      </div>
-                    </div>
-                  </a>
-                </xo-animate>
-    
-                <xo-animate xo-cascade xo-type="fade-up">
-                  <a href="/test-FE/detail.html">
-                    <div class="card-product">
-                      <img src="assets/images/products/anh4.jpg" alt="anh1" />
-                      <h3 class="card-product__name">Hills</h3>
-                      <span class="card-product__price">$76</span>
-                      <div class="list-color">
-                        <div
-                          class="list-color__item list-color__item--select" style="--color-item: #c9bfae"
-                        ></div>
-                        <div class="list-color__item" style="--color-item: #a393b5"></div>
-                        <div class="list-color__item" style="--color-item: #ec978c"></div>
-                        <div class="list-color__item" style="--color-item: #ec978c"></div>
-                      </div>
-                    </div>
-                  </a>
-                </xo-animate>
-              </xo-grid>
-            </xo-carousel-slide>
-            <xo-carousel-slide>
-              <xo-grid style="--xs: 2; --lg: 4; --xo-grid-col-gap: 15px; --xo-grid-row-gap: 15px">
-                <xo-animate xo-cascade xo-type="fade-up">
-                  <a href="/test-FE/detail.html">
-                    <div class="card-product">
-                      <img src="assets/images/products/anh1.jpg" alt="anh1" />
-                      <h3 class="card-product__name">Hills</h3>
-                      <span class="card-product__price">$76</span>
-                      <div class="list-color">
-                        <div
-                          class="list-color__item list-color__item--select" style="--color-item: #c9bfae"
-                        ></div>
-                        <div class="list-color__item" style="--color-item: #a393b5"></div>
-                        <div class="list-color__item" style="--color-item: #ec978c"></div>
-                        <div class="list-color__item" style="--color-item: #ec978c"></div>
-                      </div>
-                    </div>
-                  </a>
-                </xo-animate>
-    
-                <xo-animate xo-cascade xo-type="fade-up">
-                  <a href="/test-FE/detail.html">
-                    <div class="card-product">
-                      <img src="assets/images/products/anh2.jpg" alt="anh1" />
-                      <h3 class="card-product__name">Hills</h3>
-                      <span class="card-product__price">$76</span>
-                      <div class="list-color">
-                        <div
-                          class="list-color__item list-color__item--select" style="--color-item: #c9bfae"
-                        ></div>
-                        <div class="list-color__item" style="--color-item: #a393b5"></div>
-                        <div class="list-color__item" style="--color-item: #ec978c"></div>
-                        <div class="list-color__item" style="--color-item: #ec978c"></div>
-                      </div>
-                    </div>
-                  </a>
-                </xo-animate>
-    
-                <xo-animate xo-cascade xo-type="fade-up">
-                  <a href="/test-FE/detail.html">
-                    <div class="card-product">
-                      <img src="assets/images/products/anh3.jpg" alt="anh1" />
-                      <h3 class="card-product__name">Hills</h3>
-                      <span class="card-product__price">$76</span>
-                      <div class="list-color">
-                        <div
-                          class="list-color__item list-color__item--select" style="--color-item: #c9bfae"
-                        ></div>
-                        <div class="list-color__item" style="--color-item: #a393b5"></div>
-                        <div class="list-color__item" style="--color-item: #ec978c"></div>
-                        <div class="list-color__item" style="--color-item: #ec978c"></div>
-                      </div>
-                    </div>
-                  </a>
-                </xo-animate>
-    
-                <xo-animate xo-cascade xo-type="fade-up">
-                  <a href="/test-FE/detail.html">
-                    <div class="card-product">
-                      <img src="assets/images/products/anh4.jpg" alt="anh1" />
-                      <h3 class="card-product__name">Hills</h3>
-                      <span class="card-product__price">$76</span>
-                      <div class="list-color">
-                        <div
-                          class="list-color__item list-color__item--select" style="--color-item: #c9bfae"
-                        ></div>
-                        <div class="list-color__item" style="--color-item: #a393b5"></div>
-                        <div class="list-color__item" style="--color-item: #ec978c"></div>
-                        <div class="list-color__item" style="--color-item: #ec978c"></div>
-                      </div>
-                    </div>
-                  </a>
-                </xo-animate>
-              </xo-grid>
-            </xo-carousel-slide>
-          </xo-carousel-list>
-        </xo-carousel-inner>
-        <xo-carousel-pagination></xo-carousel-pagination>
-      </xo-carousel>
-<!-- 
-        <xo-grid style="--xs: 2; --sm: 2; --xl: 4; --xo-grid-col-gap: 30px">
-          <a href="/test-FE/detail.html">
-            <div class="card-product">
-              <img src="assets/images/products/anh1.jpg" alt="anh1" />
-              <h3 class="card-product__name">Hills</h3>
-              <span class="card-product__price">$76</span>
-              <div class="list-color">
-                <div
-                  class="list-color__item list-color__item--select" style="--color-item: #c9bfae"
-                ></div>
-                <div class="list-color__item" style="--color-item: #a393b5"></div>
-                <div class="list-color__item" style="--color-item: #ec978c"></div>
-                <div class="list-color__item" style="--color-item: #ec978c"></div>
-              </div>
-            </div>
-          </a>
-          <a href="/test-FE/detail.html">
-            <div class="card-product">
-              <img src="assets/images/products/anh2.jpg" alt="anh1" />
-              <h3 class="card-product__name">Hills</h3>
-              <span class="card-product__price">$76</span>
-              <div class="list-color">
-                <div
-                  class="list-color__item list-color__item--select" style="--color-item: #c9bfae"
-                ></div>
-                <div class="list-color__item" style="--color-item: #a393b5"></div>
-                <div class="list-color__item" style="--color-item: #ec978c"></div>
-                <div class="list-color__item" style="--color-item: #ec978c"></div>
-              </div>
-            </div>
-          </a>
+              </xo-carousel-slide>
   
-          <a href="/test-FE/detail.html">
-            <div class="card-product">
-              <img src="assets/images/products/anh3.jpg" alt="anh1" />
-              <h3 class="card-product__name">Hills</h3>
-              <span class="card-product__price">$76</span>
-              <div class="list-color">
-                <div
-                  class="list-color__item list-color__item--select" style="--color-item: #c9bfae"
-                ></div>
-                <div class="list-color__item" style="--color-item: #a393b5"></div>
-                <div class="list-color__item" style="--color-item: #ec978c"></div>
-                <div class="list-color__item" style="--color-item: #ec978c"></div>
-              </div>
-            </div>
-          </a>
+              <xo-carousel-slide>
+                <xo-grid style="--xs: 2; --lg:4; --xo-grid-col-gap: 15px; --xo-grid-row-gap: 15px">
+                  <xo-animate xo-cascade xo-type="fade-up">
+                    <div class="card-product">
+                      <a href="/test-FE/detail.html">
+                        <div class="card-img">
+                          <div class="card-img__first">
+                            <img src="assets/images/products/anh1.jpg" alt="anh1" />
+                          </div>
+                          <div class="card-img__second">
+                            <img src="assets/images/products/anh5.jpg" alt="anh1" />
+                          </div>
+                        </div>
+                        <h3 class="card-product__name">Hills</h3>
+                        <span class="card-product__price">$76</span>
+                      </a>
+                      <div class="list-color">
+                        <div class="list-color__item list-color__item--select" style="--color-item: #c9bfae"></div>
+                        <div class="list-color__item" style="--color-item: #a393b5"></div>
+                        <div class="list-color__item" style="--color-item: #ec978c"></div>
+                        <div class="list-color__item" style="--color-item: #ec978c"></div>
+                      </div>
+                    </div>
+                  </xo-animate>
   
-          <a href="/test-FE/detail.html">
-            <div class="card-product">
-              <img src="assets/images/products/anh4.jpg" alt="anh1" />
-              <h3 class="card-product__name">Hills</h3>
-              <span class="card-product__price">$76</span>
-              <div class="list-color">
-                <div
-                  class="list-color__item list-color__item--select" style="--color-item: #c9bfae"
-                ></div>
-                <div class="list-color__item" style="--color-item: #a393b5"></div>
-                <div class="list-color__item" style="--color-item: #ec978c"></div>
-                <div class="list-color__item" style="--color-item: #ec978c"></div>
-              </div>
-            </div>
-          </a>
-        </xo-grid>
-        <div class="process-bar" style="visibility: visible; margin-top: 32px;">
-          <div class="progress-bar__fill"></div>
-          <div class="progress-bar__step"></div>
-          <div class="progress-bar__step"></div>
-        </div> -->
+                  <xo-animate xo-cascade xo-type="fade-up">
+                    <div class="card-product">
+                      <a href="/test-FE/detail.html">
+                        <div class="card-img">
+                          <div class="card-img__first">
+                            <img src="assets/images/products/anh2.jpg" alt="anh1" />
+                          </div>
+                          <div class="card-img__second">
+                            <img src="assets/images/products/anh5.jpg" alt="anh1" />
+                          </div>
+                        </div>
+                        <h3 class="card-product__name">Hills</h3>
+                        <span class="card-product__price">$76</span>
+                      </a>
+                      <div class="list-color">
+                        <div class="list-color__item list-color__item--select" style="--color-item: #c9bfae"></div>
+                        <div class="list-color__item" style="--color-item: #a393b5"></div>
+                        <div class="list-color__item" style="--color-item: #ec978c"></div>
+                        <div class="list-color__item" style="--color-item: #ec978c"></div>
+                      </div>
+                    </div>
+                  </xo-animate>
+  
+                  <xo-animate xo-cascade xo-type="fade-up">
+                    <div class="card-product">
+                      <a href="/test-FE/detail.html">
+                        <div class="card-img">
+                          <div class="card-img__first">
+                            <img src="assets/images/products/anh3.jpg" alt="anh1" />
+                          </div>
+                          <div class="card-img__second">
+                            <img src="assets/images/products/anh5.jpg" alt="anh1" />
+                          </div>
+                        </div>
+                        <h3 class="card-product__name">Hills</h3>
+                        <span class="card-product__price">$76</span>
+                      </a>
+                      <div class="list-color">
+                        <div class="list-color__item list-color__item--select" style="--color-item: #c9bfae"></div>
+                        <div class="list-color__item" style="--color-item: #a393b5"></div>
+                        <div class="list-color__item" style="--color-item: #ec978c"></div>
+                        <div class="list-color__item" style="--color-item: #ec978c"></div>
+                      </div>
+                    </div>
+                  </xo-animate>
+  
+                  <xo-animate xo-cascade xo-type="fade-up">
+                    <div class="card-product">
+                      <a href="/test-FE/detail.html">
+                        <div class="card-img">
+                          <div class="card-img__first">
+                            <img src="assets/images/products/anh4.jpg" alt="anh1" />
+                          </div>
+                          <div class="card-img__second">
+                            <img src="assets/images/products/anh5.jpg" alt="anh1" />
+                          </div>
+                        </div>
+                        <h3 class="card-product__name">Hills</h3>
+                        <span class="card-product__price">$76</span>
+                      </a>
+                      <div class="list-color">
+                        <div class="list-color__item list-color__item--select" style="--color-item: #c9bfae"></div>
+                        <div class="list-color__item" style="--color-item: #a393b5"></div>
+                        <div class="list-color__item" style="--color-item: #ec978c"></div>
+                        <div class="list-color__item" style="--color-item: #ec978c"></div>
+                      </div>
+                    </div>
+                  </xo-animate>
+                </xo-grid>
+              </xo-carousel-slide>
+  
+              <xo-carousel-slide>
+                <xo-grid style="--xs: 2; --lg:4; --xo-grid-col-gap: 15px; --xo-grid-row-gap: 15px">
+                  <xo-animate xo-cascade xo-type="fade-up">
+                    <div class="card-product">
+                      <a href="/test-FE/detail.html">
+                        <div class="card-img">
+                          <div class="card-img__first">
+                            <img src="assets/images/products/anh1.jpg" alt="anh1" />
+                          </div>
+                          <div class="card-img__second">
+                            <img src="assets/images/products/anh5.jpg" alt="anh1" />
+                          </div>
+                        </div>
+                        <h3 class="card-product__name">Hills</h3>
+                        <span class="card-product__price">$76</span>
+                      </a>
+                      <div class="list-color">
+                        <div class="list-color__item list-color__item--select" style="--color-item: #c9bfae"></div>
+                        <div class="list-color__item" style="--color-item: #a393b5"></div>
+                        <div class="list-color__item" style="--color-item: #ec978c"></div>
+                        <div class="list-color__item" style="--color-item: #ec978c"></div>
+                      </div>
+                    </div>
+                  </xo-animate>
+  
+                  <xo-animate xo-cascade xo-type="fade-up">
+                    <div class="card-product">
+                      <a href="/test-FE/detail.html">
+                        <div class="card-img">
+                          <div class="card-img__first">
+                            <img src="assets/images/products/anh2.jpg" alt="anh1" />
+                          </div>
+                          <div class="card-img__second">
+                            <img src="assets/images/products/anh5.jpg" alt="anh1" />
+                          </div>
+                        </div>
+                        <h3 class="card-product__name">Hills</h3>
+                        <span class="card-product__price">$76</span>
+                      </a>
+                      <div class="list-color">
+                        <div class="list-color__item list-color__item--select" style="--color-item: #c9bfae"></div>
+                        <div class="list-color__item" style="--color-item: #a393b5"></div>
+                        <div class="list-color__item" style="--color-item: #ec978c"></div>
+                        <div class="list-color__item" style="--color-item: #ec978c"></div>
+                      </div>
+                    </div>
+                  </xo-animate>
+  
+                  <xo-animate xo-cascade xo-type="fade-up">
+                    <div class="card-product">
+                      <a href="/test-FE/detail.html">
+                        <div class="card-img">
+                          <div class="card-img__first">
+                            <img src="assets/images/products/anh3.jpg" alt="anh1" />
+                          </div>
+                          <div class="card-img__second">
+                            <img src="assets/images/products/anh5.jpg" alt="anh1" />
+                          </div>
+                        </div>
+                        <h3 class="card-product__name">Hills</h3>
+                        <span class="card-product__price">$76</span>
+                      </a>
+                      <div class="list-color">
+                        <div class="list-color__item list-color__item--select" style="--color-item: #c9bfae"></div>
+                        <div class="list-color__item" style="--color-item: #a393b5"></div>
+                        <div class="list-color__item" style="--color-item: #ec978c"></div>
+                        <div class="list-color__item" style="--color-item: #ec978c"></div>
+                      </div>
+                    </div>
+                  </xo-animate>
+  
+                  <xo-animate xo-cascade xo-type="fade-up">
+                    <div class="card-product">
+                      <a href="/test-FE/detail.html">
+                        <div class="card-img">
+                          <div class="card-img__first">
+                            <img src="assets/images/products/anh4.jpg" alt="anh1" />
+                          </div>
+                          <div class="card-img__second">
+                            <img src="assets/images/products/anh5.jpg" alt="anh1" />
+                          </div>
+                        </div>
+                        <h3 class="card-product__name">Hills</h3>
+                        <span class="card-product__price">$76</span>
+                      </a>
+                      <div class="list-color">
+                        <div class="list-color__item list-color__item--select" style="--color-item: #c9bfae"></div>
+                        <div class="list-color__item" style="--color-item: #a393b5"></div>
+                        <div class="list-color__item" style="--color-item: #ec978c"></div>
+                        <div class="list-color__item" style="--color-item: #ec978c"></div>
+                      </div>
+                    </div>
+                  </xo-animate>
+                </xo-grid>
+              </xo-carousel-slide>
+            </xo-carousel-list>
+          </xo-carousel-inner>
+          <xo-carousel-pagination></xo-carousel-pagination>
+        </xo-carousel>
       </div>
-    </section>
+    </xo-container>
+  </section>
 
 
-    <footer class="footer">
-      <div class="container-base">
-        <div class="footer__content">
-          <div class="footer__content-left">
-            <img src="assets/icons/logo.svg" alt="logo">
-            <p>This means that once you use different template designs for actual testimonial website widgets, you can make images from them and post</p>
+  <footer class="footer">
+    <div class="container-base">
+      <div class="footer__content">
+        <div class="footer__content-left">
+          <img src="assets/icons/logo.svg" alt="logo">
+          <p>This means that once you use different template designs for actual testimonial website widgets, you can
+            make images from them and post</p>
           <div class="footer__content-socials">
             <xo-tooltip xo-title="facebook">
               <img src="assets/icons/socials/facebook.svg" alt="icon">
@@ -892,59 +978,69 @@
               <img src="assets/icons/socials/insta.svg" alt="icon">
             </xo-tooltip>
           </div>
-          </div>
-          
-          <div class="footer__content-right">
-            <div class="footer__content-menu">
-              <h2>HOME</h2>
-              <a href="#" class="underline">Shop</a>
-              <a href="#" class="underline">Collection</a>
-              <a href="#" class="underline">About us</a>
-              <a href="#" class="underline">Blogs</a>
-              <a href="#" class="underline">Contact</a>
-            </div>
-            <div class="footer__content-menu">
-              <h2>COLLECTION</h2>
-              <a href="#" class="underline">Sprring Summer</a>
-              <a href="#" class="underline">Summer Nautica </a>
-              <a href="#" class="underline">Ocean Ocean 2023</a>
-              <a href="#" class="underline">Blogs</a>
-              <a href="#" class="underline">Contact</a>
-            </div>
-          </div>
         </div>
-  
-        <div class="footer__input">
-          <input placeholder="Enter your email..." >
-          <div>
-            <img
-              src="assets/icons/arrowdown.svg"
-              alt="icons"
-              style="rotate: 180deg"
-            />
+
+        <div class="footer__content-right">
+          <div class="footer__content-menu">
+            <h2>HOME</h2>
+            <a href="#" class="underline">Shop</a>
+            <a href="#" class="underline">Collection</a>
+            <a href="#" class="underline">About us</a>
+            <a href="#" class="underline">Blogs</a>
+            <a href="#" class="underline">Contact</a>
           </div>
-        </div>
-  
-        <div class="footer__pay">
-          <div class="footer__pay-left">
-            <span>Term</span>
-            <div></div>
-            <span>Policy Privicy</span>
-          </div>
-          <div class="footer__pay-right">
-            <img src="assets/icons/pay/shopay.svg" alt="paypal">
-            <img src="assets/icons/pay/visa.svg" alt="visa">
-            <img src="assets/icons/pay/mastercard.svg" alt="mastercard">
-            <div class="footer__pay-apple">
-              <img src="assets/icons/pay/apple.svg" alt="americanexpress">
-            </div>
-            <img src="assets/icons/pay/google.svg" alt="icon">
-            <img src="assets/icons/pay/amex.svg" alt="icon">
-            <div class="footer__currency-select">United States (USD$) <img src="assets/icons/arrowdownwhite.svg" alt="icon">
+          <div class="footer__content-menu">
+            <h2>COLLECTION</h2>
+            <a href="#" class="underline">Sprring Summer</a>
+            <a href="#" class="underline">Summer Nautica </a>
+            <a href="#" class="underline">Ocean Ocean 2023</a>
+            <a href="#" class="underline">Blogs</a>
+            <a href="#" class="underline">Contact</a>
           </div>
         </div>
       </div>
-    </footer>
-    <script src="xo-webcomponents.js"></script>
-  </body>
+
+      <div class="footer__input">
+        <input placeholder="Enter your email...">
+        <div>
+          <img src="assets/icons/arrowdown.svg" alt="icons" style="rotate: 180deg" />
+        </div>
+      </div>
+
+      <div class="footer__pay">
+        <div class="footer__pay-left">
+          <span>Term</span>
+          <div></div>
+          <span>Policy Privicy</span>
+        </div>
+        <div class="footer__pay-right">
+          <img src="assets/icons/pay/shopay.svg" alt="paypal">
+          <img src="assets/icons/pay/visa.svg" alt="visa">
+          <img src="assets/icons/pay/mastercard.svg" alt="mastercard">
+          <div class="footer__pay-apple">
+            <img src="assets/icons/pay/apple.svg" alt="americanexpress">
+          </div>
+          <img src="assets/icons/pay/google.svg" alt="icon">
+          <img src="assets/icons/pay/amex.svg" alt="icon">
+          <xo-popover-trigger xo-name="top-left">
+            <div class="footer__currency-select">United States (USD$) <img src="assets/icons/arrowdownwhite.svg"
+                alt="icon">
+          </xo-popover-trigger>
+
+          <xo-popover xo-name="top-left" xo-placement="top-left" class="xo-currency-select__content">
+            <div class="xo-currency-select__item">Australia | USD $</div>
+            <div class="xo-currency-select__item">Austria | USD $</div>
+            <div class="xo-currency-select__item">Belgium | USD $</div>
+            <div class="xo-currency-select__item">Canada | USD $</div>
+            <div class="xo-currency-select__item">Czechia | USD $</div>
+          </xo-popover>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="main.js"></script>
+  <script src="xo-webcomponents.js"></script>
+</body>
+
 </html>

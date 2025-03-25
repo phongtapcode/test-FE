@@ -17,75 +17,60 @@ body {
   box-sizing: border-box;
 }
 
-.container-base {
-    @media (min-width: 1920px) {
-      padding: 0 54px;
-    }
-  
-    @media (min-width: 1500px) and (max-width: 1920px) {
-      padding: 0 40px;
-    }
-  
-    @media (min-width: 1280px) and (max-width: 1500px) {
-      padding: 0 30px;
-    }
-  
-    @media (max-width: 1279px) {
-      padding: 0 16px;
-    }
-  }
-  
-  .container-main {
-    @media (min-width: 1900px) {
-      width: 1592px;
-      margin: 0 auto;
-    }
-  
-    @media (min-width: 1500px) and (max-width: 1900px) {
-      width: 1200px;
-      margin: 0 auto;
-    }
-  
-    @media (min-width: 1280px) and (max-width: 1500px) {
-      width: 1100px;
-      margin: 0 auto;
-    }
-  
-    @media (max-width: 1279px) {
-      padding: 0 16px;
-    }
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  .page-section {
-    background: var(--bg);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-  }
-
-  .underline {
-    display: inline-block;
-    position: relative;
-    text-decoration: none;
+:root {
+  --xo-container-width: 1592px;
+  --xo-container-gap: 16px;
 }
 
-  .underline::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -5px; /* Khoảng cách gạch dưới */
-    width: 0%;
-    height: 1px;
-    background-color: var(--color-underline, white);
-    transition: width 0.2s ease-in-out;
+.container-base {
+  @media (min-width: 1920px) {
+    padding: 0 54px;
+  }
+
+  @media (min-width: 1500px) and (max-width: 1920px) {
+    padding: 0 40px;
+  }
+
+  @media (min-width: 1280px) and (max-width: 1500px) {
+    padding: 0 30px;
+  }
+
+  @media (max-width: 1279px) {
+    padding: 0 16px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.page-section {
+  background: var(--bg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.underline {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  /* Khoảng cách gạch dưới */
+  width: 0%;
+  height: 1px;
+  background-color: var(--color-underline, white);
+  transition: width 0.2s ease-in-out;
 }
 
 .underline:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
 .card-img {
@@ -104,7 +89,8 @@ body {
   opacity: 0;
 }
 
-.card-img__first, .card-img__second{
+.card-img__first,
+.card-img__second {
   transition: all 0.3s ease-in-out;
 }
 
@@ -125,7 +111,7 @@ body {
   color: transparent;
   line-height: 1.4;
   cursor: pointer;
-  transition: 0.5s cubic-bezier(.25,.74,.22,.99);
+  transition: 0.5s cubic-bezier(.25, .74, .22, .99);
   text-shadow: 0 0 0 #fff, 0 30px 0 transparent;
   overflow: hidden;
 }
@@ -141,7 +127,7 @@ body {
   height: 0;
   padding-top: 100%;
   border-radius: 50% 50% 0 0;
-  transition: all 0.5s cubic-bezier(.25,.74,.22,.99) 0.05s, border-radius 0.5s cubic-bezier(.25,.74,.22,.99) 0.22s;
+  transition: all 0.5s cubic-bezier(.25, .74, .22, .99) 0.05s, border-radius 0.5s cubic-bezier(.25, .74, .22, .99) 0.22s;
   background: white;
 }
 

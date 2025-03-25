@@ -25,3 +25,29 @@ categoryItems.forEach(item => {
     item.classList.add('category__item--select');
   });
 });
+
+const sortItems = document.querySelectorAll('.xo-sort-select__item');
+
+function setSelected(item) {
+  // Bỏ chọn tất cả
+  sortItems.forEach(i => {
+    i.classList.remove('xo-sort-select__item--selected');
+    const img = i.querySelector('img');
+    if (img) img.style.display = 'none';
+  });
+
+  // Chọn item được truyền vào
+  item.classList.add('xo-sort-select__item--selected');
+  const selectedImg = item.querySelector('img');
+  if (selectedImg) selectedImg.style.display = 'block';
+}
+
+// ✅ 1. Thiết lập mặc định khi load trang
+setSelected(sortItems[0]);
+
+// ✅ 2. Gắn sự kiện click
+sortItems.forEach(item => {
+  item.addEventListener('click', () => {
+    setSelected(item);
+  });
+});

@@ -36,9 +36,10 @@
 
 .list-color {
   display: flex;
+  width: fit-content;
   align-items: center;
-  justify-content: center;
-  gap: 3px;
+  gap: 4px;
+  margin: 0 auto;
   margin-top: 25px;
 }
 
